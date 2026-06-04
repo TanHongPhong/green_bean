@@ -33,32 +33,23 @@ Vi vay, trong repo hien tai moi nen xem day la:
 
 ---
 
-## 3. File da luu trong repo
+## 3. File dang giu trong repo
 
-### Anh nguon
+Sau khi don repo, cac anh local dang duoc giu lai da duoc gom ve mot cho:
 
-* `assets/images/source/facebook/facebook-og.jpg`
-
-### Bo anh da duoc sap nhom de dung cho web
-
-* `assets/images/hero/`
-* `assets/images/space/`
-* `assets/images/menu/`
-* `assets/images/featured/`
-* `assets/images/promo/`
-* `assets/images/brand/`
-
-### Anh da crop de dung nhanh
-
-* `assets/images/brand/greenbean-facebook-signage.jpg`
-* `assets/images/brand/greenbean-sign-square.jpg`
-* `assets/images/brand/greenbean-sign-landscape.jpg`
+* `assets/media/greenbean-logo.png`
+* `assets/media/home-hero.png`
+* `assets/media/storefront-wide.jpg`
+* `assets/media/storefront-front.jpg`
+* `assets/media/brand-interior.jpg`
+* `assets/media/brand-sign-square.jpg`
+* `assets/media/cafe-lifestyle.jpg`
 
 ---
 
 ## 4. Goi y cach dung tung anh
 
-### Nhom `hero/`
+### Hero / Brand
 
 Dung cho:
 
@@ -68,12 +59,11 @@ Dung cho:
 
 File uu tien:
 
-* `hero-lifestyle-01.jpg`
-* `hero-lifestyle-02.jpg`
-* `hero-lifestyle-03.jpg`
-* `hero-brand-sign.jpg`
+* `brand-interior.jpg`
+* `storefront-wide.jpg`
+* `home-hero.png`
 
-### Nhom `space/`
+### Space / Lifestyle
 
 Dung cho:
 
@@ -83,41 +73,9 @@ Dung cho:
 
 Luu y:
 
-* Day khong phai bo anh noi that quan theo nghia day du
-* Nhom nay nghieng ve lifestyle va hinh anh thuong hieu
-
-### Nhom `menu/`
-
-Dung cho:
-
-* Grid menu
-* Preview mon
-* Card mon
-
-File sach va de dung nhat:
-
-* `menu-matcha-latte.jpg`
-* `menu-cold-brew.jpg`
-* `menu-hot-coffee-cup.jpg`
-* `menu-signature-milk-tea.jpg`
-
-### Nhom `featured/`
-
-Dung cho:
-
-* Mon noi bat
-* Combo chinh
-* CTA co san pham
-
-### Nhom `promo/`
-
-Dung cho:
-
-* Trang Uu dai
-* Banner thong bao
-* Khu vuc combo / promotion
-
-Khong nen dung nhom nay lam hero chinh cua website.
+* `cafe-lifestyle.jpg`
+* `brand-sign-square.jpg`
+* `storefront-front.jpg`
 
 ### `facebook-og.jpg`
 
@@ -187,9 +145,7 @@ Chon tay tu Facebook page:
 Sau do luu vao repo theo nhom:
 
 ```txt
-assets/images/space/
-assets/images/menu/
-assets/images/featured/
+assets/media/
 ```
 
 ### Cach tam cho demo nhanh

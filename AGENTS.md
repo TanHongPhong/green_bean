@@ -16,7 +16,7 @@ Uu tien:
 
 * Dung HTML, Tailwind CDN, CSS/JS nhe.
 * Khong them framework, bundler, package manager hay build step neu user chua yeu cau.
-* Uu tien anh local trong `assets/images/`; chi dung anh remote khi chua co anh local phu hop.
+* Uu tien anh local trong `assets/media/`; chi dung anh remote khi chua co anh local phu hop.
 * Cac form, filter, nut them mon, nut dang ky co the la demo visual, khong can submit that.
 * Neu them JS, uu tien JS ngan trong file hien tai hoac `assets/site.js` neu la hanh vi dung chung.
 * Neu them CSS dung chung, uu tien `assets/site.css`; neu chi phuc vu mot trang, co the de inline gon trong trang do.
@@ -59,7 +59,7 @@ Dung khi can tao anh bitmap moi, anh hero, texture, product/lifestyle mockup hoa
 
 Voi repo nay:
 
-* Luu anh sinh ra vao `assets/images/` theo nhom phu hop.
+* Luu anh sinh ra vao `assets/media/` theo nhom phu hop.
 * Khong thay anh local dang tot bang anh sinh moi neu khong co ly do ro.
 * Anh dung tren site phai ro chu the, khong toi, khong mo, khong stock-like.
 
@@ -102,7 +102,7 @@ Chi dung tool discovery khi user yeu cau mot plugin/connector/skill cu the, hoac
   * tranh dung qua nhieu tong khong nam trong he mau Green Bean
   * tranh gradient/orb/trang tri lam lech tinh cach "xanh, am, tinh te, de ghe"
 * Hinh anh:
-  * uu tien anh local trong `assets/images/`
+  * uu tien anh local trong `assets/media/`
   * khong dung poster social lam hero chinh neu anh co qua nhieu chu
   * product/menu dung anh san pham sang, ro, crop deu
   * space/gioi thieu dung anh lifestyle/thuong hieu/khong gian that
@@ -111,7 +111,7 @@ Chi dung tool discovery khi user yeu cau mot plugin/connector/skill cu the, hoac
 
 * Neu sua nhieu file HTML cung luc, uu tien dong bo theo component chung: header, footer, hero, CTA.
 * Khong doi ten file neu user chua yeu cau.
-* Giu ten file `intrduction.html` nhu hien tai de tranh vo link.
+* Giu ten file `introduction.html` nhu hien tai de tranh vo link.
 * Neu co chuc nang chua lam that, giu dang button hoac form demo, khong fake navigation.
 * Khong them `href="#"`; neu chua co dich den that, dung `button type="button"` hoac `aria-disabled="true"`.
 * Khong them framework/build step.
@@ -122,12 +122,12 @@ Chi dung tool discovery khi user yeu cau mot plugin/connector/skill cu the, hoac
 
 7 trang HTML can giu link noi bo dung:
 
-* `main.html`
-* `intrduction.html`
+* `index.html`
+* `introduction.html`
 * `menu.html`
-* `specialist.html`
+* `featured.html`
 * `space.html`
-* `sales.html`
+* `promotions.html`
 * `contact.html`
 
 ## Truoc khi ket thuc
