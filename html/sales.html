@@ -143,7 +143,9 @@
 <!-- TopNavBar -->
 <header class="gb-topbar">
 <div class="gb-topbar-inner">
-<a class="font-display-lg text-headline-md font-bold text-primary tracking-tight whitespace-nowrap" href="main.html">Green Bean</a>
+<a class="gb-topbar-logo" href="main.html" aria-label="Green Bean">
+<img alt="Green Bean Coffee and Tea" src="../assets/images/brand/Gemini_Generated_Image_22nhgm22nhgm22nh-removebg-preview.png"/>
+</a>
 <nav class="hidden lg:flex items-center gap-gutter">
 <a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="main.html">Trang chủ</a>
 <a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="intrduction.html">Giới thiệu</a>
@@ -161,9 +163,9 @@
 </header>
 <main class="gb-page-main min-h-screen">
 <!-- Hero Section -->
-<header class="mb-stack-lg text-center md:text-left">
-<h1 class="font-headline-lg text-headline-lg md:text-display-lg text-forest-600 mb-stack-sm">Ưu đãi &amp; Thành viên</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Khám phá thế giới hương vị với những đặc quyền dành riêng cho bạn. Thưởng thức cà phê hữu cơ và nhận những phần quà hấp dẫn.</p>
+<header class="gb-page-header text-center">
+<h1 class="text-forest-600">Ưu đãi &amp; Thành viên</h1>
+<p class="max-w-2xl text-on-surface-variant">Khám phá thế giới hương vị với những đặc quyền dành riêng cho bạn. Thưởng thức cà phê hữu cơ và nhận những phần quà hấp dẫn.</p>
 </header>
 <!-- Current Promos: Bento Grid -->
 <section data-reveal class="mb-[64px]">
@@ -215,10 +217,10 @@
 <h2 class="font-headline-lg text-headline-lg text-forest-600 mb-stack-sm">Chương trình Thành viên Green Bean</h2>
 <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Tích điểm đổi quà và hưởng những đặc quyền chỉ dành riêng cho gia đình Green Bean.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="grid grid-cols-1 gap-gutter md:grid-cols-3 md:items-stretch">
 <!-- Green Tier -->
-<div class="bg-white/80 backdrop-blur-sm p-stack-lg rounded-xl border border-stone-200 flex flex-col items-center text-center">
-<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-stack-md">
+<div class="gb-member-card flex flex-col items-center rounded-xl border border-stone-200 bg-white/[0.85] p-stack-lg text-center backdrop-blur-sm">
+<div class="mb-stack-md flex h-16 w-16 items-center justify-center rounded-full bg-surface-container">
 <span class="material-symbols-outlined text-secondary text-3xl">eco</span>
 </div>
 <h4 class="font-headline-md text-headline-md text-secondary mb-stack-sm">Green</h4>
@@ -229,22 +231,22 @@
 </ul>
 </div>
 <!-- Bean Tier -->
-<div class="bg-white p-stack-lg rounded-xl border-2 border-primary green-shadow flex flex-col items-center text-center transform scale-105">
-<div class="absolute top-0 right-0 bg-primary text-white font-label-sm text-label-sm px-stack-md py-1 rounded-bl-xl uppercase tracking-wider">Phổ biến nhất</div>
-<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-stack-md">
+<div class="gb-member-card green-shadow relative flex flex-col items-center rounded-xl bg-primary p-stack-lg text-center text-white md:-translate-y-2">
+<div class="absolute top-0 right-0 rounded-bl-xl bg-white text-primary font-label-sm text-label-sm px-stack-md py-1 uppercase tracking-wider">Phổ biến nhất</div>
+<div class="mb-stack-md flex h-16 w-16 items-center justify-center rounded-full bg-white/16">
 <span class="material-symbols-outlined text-white text-3xl">coffee</span>
 </div>
-<h4 class="font-headline-md text-headline-md text-primary mb-stack-sm">Bean</h4>
-<p class="font-label-lg text-label-lg text-ink-500 mb-gutter">Hạng thành viên Bạc sau 100 điểm.</p>
-<ul class="text-left space-y-stack-sm font-label-lg text-label-lg text-on-surface-variant mb-gutter">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">check_circle</span> Giảm 5% mọi hóa đơn</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">check_circle</span> Miễn phí 01 topping bất kỳ</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">check_circle</span> Ưu tiên đặt bàn/chỗ</li>
+<h4 class="font-headline-md text-headline-md mb-stack-sm text-white">Bean</h4>
+<p class="font-label-lg text-label-lg mb-gutter text-white/78">Hạng thành viên Bạc sau 100 điểm.</p>
+<ul class="mb-gutter text-left space-y-stack-sm font-label-lg text-label-lg text-white/88">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary-fixed">check_circle</span> Giảm 5% mọi hóa đơn</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary-fixed">check_circle</span> Miễn phí 01 topping bất kỳ</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary-fixed">check_circle</span> Ưu tiên đặt bàn/chỗ</li>
 </ul>
 </div>
 <!-- Premium Tier -->
-<div class="bg-inverse-surface p-stack-lg rounded-xl flex flex-col items-center text-center">
-<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center mb-stack-md">
+<div class="gb-member-card flex flex-col items-center rounded-xl border border-inverse-surface bg-inverse-surface p-stack-lg text-center">
+<div class="mb-stack-md flex h-16 w-16 items-center justify-center rounded-full bg-primary">
 <span class="material-symbols-outlined text-primary-fixed text-3xl" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
 <h4 class="font-headline-md text-headline-md text-inverse-on-surface mb-stack-sm">Premium</h4>
@@ -279,38 +281,44 @@
 </section>
 </main>
 <footer class="gb-footer">
-<div class="gb-footer-inner grid grid-cols-1 gap-8 md:grid-cols-4">
-<div class="space-y-4">
-<div class="font-headline-md text-headline-md font-bold text-forest-600">Green Bean</div>
-<p class="max-w-[240px] font-body-md text-body-md text-on-surface-variant">Demo visual HTML cho website Green Bean Coffee &amp; Tea, uu tien trai nghiem gon, sach va de nhin.</p>
-<div class="flex gap-3">
+<div class="gb-footer-inner gb-footer-grid">
+<div class="gb-footer-brand">
+<a class="gb-footer-logo" href="main.html" aria-label="Green Bean Coffee and Tea">
+<img alt="Green Bean Coffee and Tea" src="../assets/images/brand/Gemini_Generated_Image_22nhgm22nhgm22nh-removebg-preview.png"/>
+</a>
+<div class="gb-footer-social">
 <a class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" href="https://www.facebook.com/greenbeancoffeeandtea" target="_blank" rel="noopener" aria-label="Facebook Green Bean">
 <span class="material-symbols-outlined text-[20px]">public</span>
 </a>
-<button class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" type="button" aria-label="Instagram demo">
-<span class="material-symbols-outlined text-[20px]">camera</span>
-</button>
+<a class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" href="tel:0862401122" aria-label="Gọi Green Bean">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</a>
+<a class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" href="mailto:cskh.greenbean@gmail.com" aria-label="Email Green Bean">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</a>
 </div>
 </div>
-<div class="flex flex-col gap-3">
-<h4 class="font-label-lg text-label-lg font-bold text-primary">Khám phá</h4>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="main.html">Trang chủ</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="intrduction.html">Giới thiệu</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="menu.html">Menu</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="specialist.html">Món nổi bật</a>
+<div class="gb-footer-links">
+<h4 class="gb-footer-title font-label-lg text-label-lg">Khám phá</h4>
+<a class="font-label-sm text-label-sm transition-colors" href="main.html">Trang chủ</a>
+<a class="font-label-sm text-label-sm transition-colors" href="intrduction.html">Giới thiệu</a>
+<a class="font-label-sm text-label-sm transition-colors" href="menu.html">Menu</a>
+<a class="font-label-sm text-label-sm transition-colors" href="specialist.html">Món nổi bật</a>
 </div>
-<div class="flex flex-col gap-3">
-<h4 class="font-label-lg text-label-lg font-bold text-primary">Trải nghiệm</h4>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="space.html">Không gian</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="sales.html">Ưu đãi</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="contact.html">Liên hệ</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Sự kiện riêng</a>
+<div class="gb-footer-links">
+<h4 class="gb-footer-title font-label-lg text-label-lg">Trải nghiệm</h4>
+<a class="font-label-sm text-label-sm transition-colors" href="space.html">Không gian</a>
+<a class="font-label-sm text-label-sm transition-colors" href="sales.html">Ưu đãi</a>
+<a class="font-label-sm text-label-sm transition-colors" href="contact.html">Liên hệ</a>
+<span class="font-label-sm text-label-sm" aria-disabled="true">Sự kiện riêng</span>
 </div>
-<div class="flex flex-col gap-3">
-<h4 class="font-label-lg text-label-lg font-bold text-primary">Thông tin demo</h4>
-<p class="font-label-sm text-label-sm text-on-surface-variant">Cac form va mot so nut hien chi dung de demo visual, chua ket noi chuc nang that.</p>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Chính sách riêng tư</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Điều khoản dịch vụ</a>
+<div class="gb-footer-links gb-footer-meta">
+<h4 class="gb-footer-title font-label-lg text-label-lg">Thông tin Green Bean</h4>
+<a class="font-label-sm text-label-sm transition-colors hover:text-primary" href="https://maps.google.com/?q=160%20-%20162%20Ph%E1%BA%A1m%20H%C3%B9ng%2C%20Ph%C6%B0%E1%BB%9Dng%20Ch%C3%A1nh%20H%C6%B0ng%2C%20TP.HCM" target="_blank" rel="noopener">160 - 162 Phạm Hùng, P. Chánh Hưng, TP.HCM</a>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mở cửa mỗi ngày: 7:00 - 22:30</span>
+<a class="font-label-sm text-label-sm transition-colors hover:text-primary" href="tel:0862401122">0862 401 122</a>
+<a class="font-label-sm text-label-sm transition-colors hover:text-primary" href="mailto:cskh.greenbean@gmail.com">cskh.greenbean@gmail.com</a>
+<a class="font-label-sm text-label-sm transition-colors hover:text-primary" href="https://www.facebook.com/greenbeancoffeeandtea" target="_blank" rel="noopener">facebook.com/greenbeancoffeeandtea</a>
 </div>
 </div>
 </footer>

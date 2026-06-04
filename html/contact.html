@@ -126,7 +126,9 @@
 <!-- TopNavBar -->
 <header class="gb-topbar">
 <div class="gb-topbar-inner">
-<a class="font-display-lg text-headline-md font-bold text-primary tracking-tight whitespace-nowrap" href="main.html">Green Bean</a>
+<a class="gb-topbar-logo" href="main.html" aria-label="Green Bean">
+<img alt="Green Bean Coffee and Tea" src="../assets/images/brand/Gemini_Generated_Image_22nhgm22nhgm22nh-removebg-preview.png"/>
+</a>
 <nav class="hidden lg:flex items-center gap-gutter">
 <a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="main.html">Trang chủ</a>
 <a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="intrduction.html">Giới thiệu</a>
@@ -144,9 +146,9 @@
 </header>
 <main class="gb-page-main relative z-10">
 <!-- Hero Section -->
-<section data-reveal class="mb-stack-lg">
-<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Liên hệ Green Bean</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Ghé Green Bean Coffee &amp; Tea hoặc gửi lời nhắn để được hỗ trợ nhanh. Đây là form demo visual, chưa gửi dữ liệu thật.</p>
+<section data-reveal class="gb-page-header text-center">
+<h1 class="text-primary">Liên hệ Green Bean</h1>
+<p class="max-w-2xl text-on-surface-variant">Ghé Green Bean Coffee &amp; Tea hoặc gửi lời nhắn để được hỗ trợ nhanh. Đây là form demo visual, chưa gửi dữ liệu thật.</p>
 </section>
 <!-- Bento Grid Contact Layout -->
 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
@@ -188,25 +190,21 @@
 <div class="flex items-start gap-3">
 <span class="material-symbols-outlined text-primary mt-1">location_on</span>
 <div>
-<h3 class="font-label-lg text-label-lg text-on-surface">Chi nhánh Quận 1</h3>
-<p class="text-on-surface-variant">123 Lê Lợi, Bến Nghé, Quận 1, TP. Hồ Chí Minh</p>
+<h3 class="font-label-lg text-label-lg text-on-surface">Thông tin cơ bản</h3>
+<p class="text-on-surface-variant">160 - 162 Phạm Hùng, Phường Chánh Hưng, TP.HCM</p>
 </div>
 </div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary mt-1">location_on</span>
-<div>
-<h3 class="font-label-lg text-label-lg text-on-surface">Chi nhánh Bình Thạnh</h3>
-<p class="text-on-surface-variant">45 Nguyễn Hữu Cảnh, Phường 22, Bình Thạnh, TP. Hồ Chí Minh</p>
-</div>
-</div>
-<div class="h-px bg-stone-200 my-4"></div>
 <div class="flex items-center gap-3">
 <span class="material-symbols-outlined text-primary">call</span>
-<p class="text-on-surface-variant">+84 (028) 3822 0000</p>
+<p class="text-on-surface-variant"><a class="transition-colors hover:text-primary" href="tel:0862401122">0862 401 122</a></p>
 </div>
 <div class="flex items-center gap-3">
 <span class="material-symbols-outlined text-primary">mail</span>
-<p class="text-on-surface-variant">hello@greenbean.vn</p>
+<p class="text-on-surface-variant"><a class="transition-colors hover:text-primary" href="mailto:cskh.greenbean@gmail.com">cskh.greenbean@gmail.com</a></p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">public</span>
+<p class="text-on-surface-variant"><a class="transition-colors hover:text-primary" href="https://www.facebook.com/greenbeancoffeeandtea" target="_blank" rel="noopener">facebook.com/greenbeancoffeeandtea</a></p>
 </div>
 </div>
 </div>
@@ -218,12 +216,8 @@
 </div>
 <div class="space-y-2">
 <div class="flex justify-between items-center">
-<span class="font-label-lg text-label-lg text-on-surface-variant">Thứ 2 - Thứ 6</span>
-<span class="font-body-md text-body-md font-semibold text-primary">07:00 - 21:00</span>
-</div>
-<div class="flex justify-between items-center">
-<span class="font-label-lg text-label-lg text-on-surface-variant">Thứ 7 - Chủ nhật</span>
-<span class="font-body-md text-body-md font-semibold text-primary">07:00 - 22:00</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant">Mỗi ngày</span>
+<span class="font-body-md text-body-md font-semibold text-primary">07:00 - 22:30</span>
 </div>
 </div>
 </div>
@@ -233,10 +227,14 @@
 <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">face_nod</span>
 <span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Facebook</span>
 </a>
-<button class="flex-1 bg-white border border-stone-200 p-3 rounded-lg flex flex-col items-center gap-2 hover:bg-cream-100 transition-colors group" type="button" aria-label="Instagram demo">
-<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">photo_camera</span>
-<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Instagram</span>
-</button>
+<a class="flex-1 bg-white border border-stone-200 p-3 rounded-lg flex flex-col items-center gap-2 hover:bg-cream-100 transition-colors group" href="tel:0862401122">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">call</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Hotline</span>
+</a>
+<a class="flex-1 bg-white border border-stone-200 p-3 rounded-lg flex flex-col items-center gap-2 hover:bg-cream-100 transition-colors group" href="mailto:cskh.greenbean@gmail.com">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">mail</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Email</span>
+</a>
 </div>
 </div>
 </div>
@@ -247,45 +245,51 @@
 <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
 <div class="bg-primary text-white p-3 rounded-full shadow-lg flex items-center gap-2 ">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
-<span class="font-label-lg text-label-lg">Green Bean tại đây</span>
+<span class="font-label-lg text-label-lg">160 - 162 Phạm Hùng</span>
 </div>
 </div>
 </div>
 </section>
 </main>
 <footer class="gb-footer">
-<div class="gb-footer-inner grid grid-cols-1 gap-8 md:grid-cols-4">
-<div class="space-y-4">
-<div class="font-headline-md text-headline-md font-bold text-forest-600">Green Bean</div>
-<p class="max-w-[240px] font-body-md text-body-md text-on-surface-variant">Demo visual HTML cho website Green Bean Coffee &amp; Tea, uu tien trai nghiem gon, sach va de nhin.</p>
-<div class="flex gap-3">
+<div class="gb-footer-inner gb-footer-grid">
+<div class="gb-footer-brand">
+<a class="gb-footer-logo" href="main.html" aria-label="Green Bean Coffee and Tea">
+<img alt="Green Bean Coffee and Tea" src="../assets/images/brand/Gemini_Generated_Image_22nhgm22nhgm22nh-removebg-preview.png"/>
+</a>
+<div class="gb-footer-social">
 <a class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" href="https://www.facebook.com/greenbeancoffeeandtea" target="_blank" rel="noopener" aria-label="Facebook Green Bean">
 <span class="material-symbols-outlined text-[20px]">public</span>
 </a>
-<button class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" type="button" aria-label="Instagram demo">
-<span class="material-symbols-outlined text-[20px]">camera</span>
-</button>
+<a class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" href="tel:0862401122" aria-label="Gọi Green Bean">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</a>
+<a class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" href="mailto:cskh.greenbean@gmail.com" aria-label="Email Green Bean">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</a>
 </div>
 </div>
-<div class="flex flex-col gap-3">
-<h4 class="font-label-lg text-label-lg font-bold text-primary">Khám phá</h4>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="main.html">Trang chủ</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="intrduction.html">Giới thiệu</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="menu.html">Menu</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="specialist.html">Món nổi bật</a>
+<div class="gb-footer-links">
+<h4 class="gb-footer-title font-label-lg text-label-lg">Khám phá</h4>
+<a class="font-label-sm text-label-sm transition-colors" href="main.html">Trang chủ</a>
+<a class="font-label-sm text-label-sm transition-colors" href="intrduction.html">Giới thiệu</a>
+<a class="font-label-sm text-label-sm transition-colors" href="menu.html">Menu</a>
+<a class="font-label-sm text-label-sm transition-colors" href="specialist.html">Món nổi bật</a>
 </div>
-<div class="flex flex-col gap-3">
-<h4 class="font-label-lg text-label-lg font-bold text-primary">Trải nghiệm</h4>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="space.html">Không gian</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="sales.html">Ưu đãi</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="contact.html">Liên hệ</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Sự kiện riêng</a>
+<div class="gb-footer-links">
+<h4 class="gb-footer-title font-label-lg text-label-lg">Trải nghiệm</h4>
+<a class="font-label-sm text-label-sm transition-colors" href="space.html">Không gian</a>
+<a class="font-label-sm text-label-sm transition-colors" href="sales.html">Ưu đãi</a>
+<a class="font-label-sm text-label-sm transition-colors" href="contact.html">Liên hệ</a>
+<span class="font-label-sm text-label-sm" aria-disabled="true">Sự kiện riêng</span>
 </div>
-<div class="flex flex-col gap-3">
-<h4 class="font-label-lg text-label-lg font-bold text-primary">Thông tin demo</h4>
-<p class="font-label-sm text-label-sm text-on-surface-variant">Cac form va mot so nut hien chi dung de demo visual, chua ket noi chuc nang that.</p>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Chính sách riêng tư</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Điều khoản dịch vụ</a>
+<div class="gb-footer-links gb-footer-meta">
+<h4 class="gb-footer-title font-label-lg text-label-lg">Thông tin Green Bean</h4>
+<a class="font-label-sm text-label-sm transition-colors hover:text-primary" href="https://maps.google.com/?q=160%20-%20162%20Ph%E1%BA%A1m%20H%C3%B9ng%2C%20Ph%C6%B0%E1%BB%9Dng%20Ch%C3%A1nh%20H%C6%B0ng%2C%20TP.HCM" target="_blank" rel="noopener">160 - 162 Phạm Hùng, P. Chánh Hưng, TP.HCM</a>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mở cửa mỗi ngày: 7:00 - 22:30</span>
+<a class="font-label-sm text-label-sm transition-colors hover:text-primary" href="tel:0862401122">0862 401 122</a>
+<a class="font-label-sm text-label-sm transition-colors hover:text-primary" href="mailto:cskh.greenbean@gmail.com">cskh.greenbean@gmail.com</a>
+<a class="font-label-sm text-label-sm transition-colors hover:text-primary" href="https://www.facebook.com/greenbeancoffeeandtea" target="_blank" rel="noopener">facebook.com/greenbeancoffeeandtea</a>
 </div>
 </div>
 </footer>
