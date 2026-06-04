@@ -2,7 +2,7 @@
 
 ## 1. Muc tieu
 
-Chinh sua bo file trong `html/` theo cac yeu cau hien tai:
+Chinh sua bo file `.html` o root repo theo cac yeu cau hien tai:
 
 * Thu nho cac thanh phan giao dien khoang 20%.
 * Giu nguyen co chu hien co.
@@ -18,13 +18,13 @@ Chinh sua bo file trong `html/` theo cac yeu cau hien tai:
 
 Can xu ly 7 trang:
 
-* `html/index.html`
-* `html/introduction.html`
-* `html/menu.html`
-* `html/featured.html`
-* `html/space.html`
-* `html/promotions.html`
-* `html/contact.html`
+* `index.html`
+* `introduction.html`
+* `menu.html`
+* `featured.html`
+* `space.html`
+* `promotions.html`
+* `contact.html`
 
 Khong doi ten file trong dot nay.
 
@@ -159,7 +159,7 @@ Danh sach loi hien tai can xu ly:
 
 Sau khi sua:
 
-* Mo `html/index.html` thay banner dung ngay dau trang.
+* Mo `index.html` thay banner dung ngay dau trang.
 * Topbar tren 7 trang dong nhat va link duoc voi nhau.
 * Giao dien gon hon khoang 20% ma chu khong bi nho di.
 * Khong con link `#` o cac dieu huong chinh.

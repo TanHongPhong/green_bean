@@ -78,7 +78,7 @@ Chi dung tool discovery khi user yeu cau mot plugin/connector/skill cu the, hoac
 
 ## Nguyen tac UI cho repo nay
 
-* Header va footer phai dong bo tren tat ca trang trong `html/`.
+* Header va footer phai dong bo tren tat ca trang `.html` o root repo.
 * Header:
   * logo text `Green Bean`
   * nav link noi bo giua 7 trang
