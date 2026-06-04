@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu | Green Bean Coffee &amp; Tea</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/site.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .paper-grain {
+            position: relative;
+        }
+        .paper-grain::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.05;
+            pointer-events: none;
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            z-index: 1;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-filter {
+            background-color: #285216; /* Forest 700 / Primary */
+            color: #ffffff;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#1c1c18",
+                    "surface-container-high": "#ebe8e2",
+                    "surface": "#fcf9f3",
+                    "surface-container-highest": "#e5e2dc",
+                    "tertiary-fixed-dim": "#9ed58d",
+                    "primary": "#285216",
+                    "on-primary-fixed-variant": "#265014",
+                    "surface-tint": "#3d692a",
+                    "outline-variant": "#c2c9ba",
+                    "tertiary-fixed": "#b9f1a7",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#bdf1a2",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#bccd9d",
+                    "inverse-surface": "#31312d",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1c1c18",
+                    "secondary": "#54633d",
+                    "primary-container": "#3f6b2c",
+                    "on-primary-fixed": "#062100",
+                    "tertiary-container": "#3b6c31",
+                    "on-tertiary-fixed": "#002200",
+                    "primary-fixed-dim": "#a2d489",
+                    "surface-variant": "#e5e2dc",
+                    "inverse-primary": "#a2d489",
+                    "on-tertiary-fixed-variant": "#215119",
+                    "surface-bright": "#fcf9f3",
+                    "surface-dim": "#dcdad4",
+                    "on-secondary-container": "#596840",
+                    "stone-200": "#d8d2c8",
+                    "surface-container": "#f0eee8",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#3d4b27",
+                    "secondary-fixed": "#d7e9b8",
+                    "on-primary-container": "#b7ea9c",
+                    "on-surface-variant": "#42493d",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#131f02",
+                    "ink-500": "#6f685f",
+                    "secondary-container": "#d5e6b5",
+                    "on-secondary": "#ffffff",
+                    "ink-700": "#4a453d",
+                    "inverse-on-surface": "#f3f0ea",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f6f3ed",
+                    "background": "#fcf9f3",
+                    "forest-600": "#285018",
+                    "ink-900": "#26231f",
+                    "cream-100": "#efe9de",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#23531b",
+                    "outline": "#73796c",
+                    "on-tertiary-container": "#b3eba1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "4px",
+                    "stack-md": "13px",
+                    "gutter": "19px",
+                    "margin-mobile": "13px",
+                    "stack-sm": "6px",
+                    "margin-desktop": "51px",
+                    "stack-lg": "26px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Montserrat"],
+                    "headline-lg": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "body-md": ["Montserrat"],
+                    "label-sm": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "display-lg": ["Montserrat"],
+                    "label-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["26px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-lg": ["34px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["17px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["46px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<script defer src="../assets/site.js"></script>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md paper-grain">
+<!-- TopNavBar -->
+<header class="gb-topbar">
+<div class="gb-topbar-inner">
+<a class="font-display-lg text-headline-md font-bold text-primary tracking-tight whitespace-nowrap" href="main.html">Green Bean</a>
+<nav class="hidden lg:flex items-center gap-gutter">
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="main.html">Trang chủ</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="intrduction.html">Giới thiệu</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-primary border-b-2 border-primary pb-1" href="menu.html" aria-current="page">Menu</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="specialist.html">Món nổi bật</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="space.html">Không gian</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="sales.html">Ưu đãi</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="contact.html">Liên hệ</a>
+</nav>
+<div class="flex items-center gap-stack-sm text-primary">
+<a class="material-symbols-outlined cursor-pointer hover:scale-95 transition-transform" href="contact.html" aria-label="Liên hệ và chỉ đường">map</a>
+<button class="lg:hidden material-symbols-outlined text-primary" type="button" aria-label="Menu demo">menu</button>
+</div>
+</div>
+</header>
+<main class="gb-page-main min-h-screen">
+<!-- Header Section -->
+<section data-reveal class="gb-section-gap text-center">
+<div class="gb-shell-tight">
+<h1 class="text-[42px] font-bold leading-[1.08] text-primary mb-4">Thực đơn Green Bean</h1>
+<p class="mx-auto max-w-[720px] text-body-md leading-[1.75] text-on-surface-variant">Những món cà phê, trà và bánh ngọt được chọn lại theo hướng gọn, dễ nhìn và đúng tinh thần tươi sáng của quán.</p>
+</div>
+</section>
+<!-- Filter Tabs -->
+<section data-reveal class="mb-8 overflow-x-auto">
+<div class="gb-shell-tight flex min-w-max items-center justify-start gap-3 md:justify-center">
+<button type="button" class="category-btn active-filter rounded-full border border-stone-200 px-4 py-2 font-label-lg text-label-lg transition-all duration-300 shadow-sm" onclick="filterCategory('all')">Tất cả</button>
+<button type="button" class="category-btn rounded-full border border-stone-200 bg-surface-container-low px-4 py-2 font-label-lg text-label-lg text-on-surface-variant transition-all duration-300 hover:bg-secondary-container" onclick="filterCategory('coffee')">Cà phê</button>
+<button type="button" class="category-btn rounded-full border border-stone-200 bg-surface-container-low px-4 py-2 font-label-lg text-label-lg text-on-surface-variant transition-all duration-300 hover:bg-secondary-container" onclick="filterCategory('tea')">Trà &amp; Nước trái cây</button>
+<button type="button" class="category-btn rounded-full border border-stone-200 bg-surface-container-low px-4 py-2 font-label-lg text-label-lg text-on-surface-variant transition-all duration-300 hover:bg-secondary-container" onclick="filterCategory('blended')">Đá xay</button>
+<button type="button" class="category-btn rounded-full border border-stone-200 bg-surface-container-low px-4 py-2 font-label-lg text-label-lg text-on-surface-variant transition-all duration-300 hover:bg-secondary-container" onclick="filterCategory('pastry')">Bánh ngọt</button>
+</div>
+</section>
+<!-- Menu Grid -->
+<section data-reveal>
+<div class="gb-shell grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-5" data-stagger id="menu-grid">
+<!-- Coffee Items -->
+<div class="menu-item bg-surface-container-lowest rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(32,80,24,0.08)] group gb-lift" data-category="coffee">
+<div class="aspect-[4/4.3] overflow-hidden bg-cream-100">
+<img alt="Signature Cold Brew" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIoAiLd-6ATdp8QbtlNjgXl0M0Ks26Qw0gFapOGjEKJya9E00QbmvkK1T5u3SfVzkBZMvyZDq-xYl8VBkxq9H6Y9B1thdAt22BaY4qS9r_k7fUtL-7M-XPsk0r1QP-ugu-mmL-48ClWccb4jXz1ROm9tShiHQDwvjhMWY0dMFCDnzZdqpsL0_xeWCZsLYB4x1Q1nmpRcX8MVA4FXINEdw3qv2dmXJzKZEcCsWLVCQu4BVW-zCZip2WWU0J76A6fTUjatYg-_Q6vdY"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[18px] font-semibold leading-[1.25] text-on-surface">Cold Brew Chữ Ký</h3>
+<span class="text-[15px] font-semibold text-primary">55.000đ</span>
+</div>
+<p class="mb-3 text-[15px] leading-[1.7] text-on-surface-variant">Ủ lạnh 18 giờ để giữ vị êm, ngọt dịu tự nhiên và hậu vị chocolate nhẹ.</p>
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Cà phê</span>
+<span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Ủ lạnh</span>
+</div>
+</div>
+</div>
+<div class="menu-item bg-surface-container-lowest rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(32,80,24,0.08)] group gb-lift" data-category="coffee">
+<div class="aspect-[4/4.3] overflow-hidden bg-cream-100">
+<img alt="Vietnamese Traditional Coffee" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoyrZzN0A7FIbvcX780M4MHSuFE0agvVk3Jilju3Th18O5AnHBwGE1tuSo6g970TOMHe3ChXBAjBVJD7VHG8sC22d5gKDxDfW5mdk1LFSs0y_1UCR7XnxM8P6b6OF7no5D9NZYQrcAT31EnHQL8nweF9kq_fl3afrueY5ztI1eqvhVxEdRAKRCC-OVHZ12QCuaAXawWViAHKWV6k4DR9_R-LcWCePHUZAKUMQ6ahqGS0Xv8xPim5jGtdB3sgxXB50Ag1UCEuwe4s8"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[18px] font-semibold leading-[1.25] text-on-surface">Cà Phê Sữa Đá</h3>
+<span class="text-[15px] font-semibold text-primary">45.000đ</span>
+</div>
+<p class="mb-3 text-[15px] leading-[1.7] text-on-surface-variant">Cà phê phin Việt Nam kết hợp sữa đặc và lớp kem muối nhẹ, đậm mà vẫn êm vị.</p>
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Cà phê</span>
+<span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Truyền thống</span>
+</div>
+</div>
+</div>
+<!-- Tea Items -->
+<div class="menu-item bg-surface-container-lowest rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(32,80,24,0.08)] group gb-lift" data-category="tea">
+<div class="aspect-[4/4.3] overflow-hidden bg-cream-100">
+<img alt="Premium Matcha Latte" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuRG2Y9HhbiCfFF0oGZqYvq1DV1x-GDzANVL_zjjmUMbRFte64iDpvy9vgxUq9HOx1FE1fo2sD6TgkyF2F38Zb0bG5WtI2yUKqum0QElGlkxFZgHAMIbOnsRQSRqPMklDqPmlXeH6oGs_dyZpznQaRvthYlXJbXm55LdeyI_ifTkAaC8dCzjoB2q08vWA6jSkLlb5WsXEMc7_MttBYTr64DTNRz8QPz4IecnKNfPkDzCAK52xrcGU-ihEVzA8a8rRct1ze7t3_urY"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[18px] font-semibold leading-[1.25] text-on-surface">Matcha Latte Cao Cấp</h3>
+<span class="text-[15px] font-semibold text-primary">65.000đ</span>
+</div>
+<p class="mb-3 text-[15px] leading-[1.7] text-on-surface-variant">Matcha Uji đánh mịn cùng sữa yến mạch hữu cơ, cho vị béo nhẹ và hậu vị xanh thanh.</p>
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Trà</span>
+<span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Uji Matcha</span>
+</div>
+</div>
+</div>
+<!-- Manual Placeholders for other categories to demonstrate grid -->
+<div class="menu-item bg-surface-container-lowest rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(32,80,24,0.08)] group gb-lift" data-category="tea">
+<div class="aspect-[4/4.3] bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-5xl" data-icon="local_drink">local_drink</span>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[18px] font-semibold leading-[1.25] text-on-surface">Trà Vải Hoa Hồng</h3>
+<span class="text-[15px] font-semibold text-primary">58.000đ</span>
+</div>
+<p class="mb-3 text-[15px] leading-[1.7] text-on-surface-variant">Nền trà đen dịu vị hòa cùng vải ngọt thanh và cánh hoa hồng, thơm mát vừa đủ.</p>
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Trà</span>
+<span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Thanh mát</span>
+</div>
+</div>
+</div>
+<div class="menu-item bg-surface-container-lowest rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(32,80,24,0.08)] group gb-lift" data-category="blended">
+<div class="aspect-[4/4.3] bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-5xl" data-icon="icecream">icecream</span>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[18px] font-semibold leading-[1.25] text-on-surface">Đá Xay Caramel Muối Biển</h3>
+<span class="text-[15px] font-semibold text-primary">69.000đ</span>
+</div>
+<p class="mb-3 text-[15px] leading-[1.7] text-on-surface-variant">Espresso xay cùng caramel nhà làm và lớp kem muối biển béo mượt ở trên.</p>
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Đá xay</span>
+<span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Chữ ký</span>
+</div>
+</div>
+</div>
+<div class="menu-item bg-surface-container-lowest rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(32,80,24,0.08)] group gb-lift" data-category="pastry">
+<div class="aspect-[4/4.3] bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-5xl" data-icon="bakery_dining">bakery_dining</span>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[18px] font-semibold leading-[1.25] text-on-surface">Croissant Bơ</h3>
+<span class="text-[15px] font-semibold text-primary">39.000đ</span>
+</div>
+<p class="mb-3 text-[15px] leading-[1.7] text-on-surface-variant">Bánh sừng bò nướng mới mỗi sáng, thơm bơ và giòn xốp theo phong cách Pháp cổ điển.</p>
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Bánh ngọt</span>
+<span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Nướng mới</span>
+</div>
+</div>
+</div>
+<div class="menu-item bg-surface-container-lowest rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(32,80,24,0.08)] group gb-lift" data-category="tea"><div class="aspect-[4/4.3] overflow-hidden bg-cream-100"><img alt="Hồng Trà Sữa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQEMgK0OxMCrFu7_LpLMBT85zCttVLbxGUTbTb7Tvx1gb44xyYllyWB8AI5ZZmHluYoqfAYqOvNAFr0sSEBZn00ReNPWveQyhQyzI98HYuAl7__aWKaqkEf2uPVsAKVRmjybxljBgmYOQhZdEVeXXJRLbhJCe7PknmU7XaA6lNrj5rIYwPSOhSSvAyQm9B0gN5EW-MV0Eh1M_ymlVkbd2xhVVXD-uf0WD7oL0KNOvi5meWh7F0NVDG0E4qjAVoM0sUcLIlcA4Gjj8"/></div><div class="p-4"><div class="flex justify-between items-start mb-2"><h3 class="text-[18px] font-semibold leading-[1.25] text-on-surface">Hồng Trà Sữa</h3><span class="text-[15px] font-semibold text-primary">45.000đ</span></div><p class="mb-3 text-[15px] leading-[1.7] text-on-surface-variant">Trà đen pha sữa béo mịn, tạo cảm giác quen thuộc và dễ uống.</p><div class="flex flex-wrap items-center gap-2"><span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Trà</span><span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Bán chạy</span></div></div></div><div class="menu-item bg-surface-container-lowest rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(32,80,24,0.08)] group gb-lift" data-category="coffee"><div class="aspect-[4/4.3] bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-outline text-5xl" data-icon="coffee">coffee</span></div><div class="p-4"><div class="flex justify-between items-start mb-2"><h3 class="text-[18px] font-semibold leading-[1.25] text-on-surface">Espresso Doppio</h3><span class="text-[15px] font-semibold text-primary">35.000đ</span></div><p class="mb-3 text-[15px] leading-[1.7] text-on-surface-variant">Hai shot espresso cô đọng với hương rang mộc, mạnh và dày vị.</p><div class="flex flex-wrap items-center gap-2"><span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Cà phê</span><span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Đậm đà</span></div></div></div><div class="menu-item bg-surface-container-lowest rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(32,80,24,0.08)] group gb-lift" data-category="pastry"><div class="aspect-[4/4.3] bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-outline text-5xl" data-icon="bakery_dining">bakery_dining</span></div><div class="p-4"><div class="flex justify-between items-start mb-2"><h3 class="text-[18px] font-semibold leading-[1.25] text-on-surface">Pain au Chocolat</h3><span class="text-[15px] font-semibold text-primary">42.000đ</span></div><p class="mb-3 text-[15px] leading-[1.7] text-on-surface-variant">Lớp vỏ bơ giòn xốp ôm phần chocolate đen đậm vị ở bên trong.</p><div class="flex flex-wrap items-center gap-2"><span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Bánh ngọt</span><span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Nướng mới</span></div></div></div><div class="menu-item bg-surface-container-lowest rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(32,80,24,0.08)] group gb-lift" data-category="coffee"><div class="aspect-[4/4.3] overflow-hidden bg-cream-100"><img alt="Cà Phê Sữa Đá" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMCazwBGHwRKaeS6w_zBkP6MUhx1zbpfYnj2x7Dz_cDZsGjhDRK1Ll0oayRWHoZY_Cf0qI2LsyYHLiqc3SR5wb0GeyBh0GTAPno0AnPkZo0pX5Qbs8T5flmLw5ih5JB-ZTjMYgZvbH2QJQSDuYTCjAG7RDuFfxP_bTv3vCdp16KReW81_FuanxcB9mj3FKWfHkg5-wQDPw3WUQMgbWqcxMOZ0uUlLUtcWlfvX8OXj84W9JdxHA_wxdIH0UlTWHGoI5LMiGABw4QU8"/></div><div class="p-4"><div class="flex justify-between items-start mb-2"><h3 class="text-[18px] font-semibold leading-[1.25] text-on-surface">Cà Phê Sữa Đá</h3><span class="text-[15px] font-semibold text-primary">45.000đ</span></div><p class="mb-3 text-[15px] leading-[1.7] text-on-surface-variant">Cà phê phin Việt Nam kết hợp sữa đặc và lớp kem muối nhẹ, đậm mà vẫn êm vị.</p><div class="flex flex-wrap items-center gap-2"><span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Cà phê</span><span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Truyền thống</span></div></div></div><div class="menu-item bg-surface-container-lowest rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(32,80,24,0.08)] group gb-lift" data-category="blended"><div class="aspect-[4/4.3] overflow-hidden bg-cream-100"><img alt="Cold Brew Cam Quế" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7yx8A68cEek07NWwJMZv1g4jziKb1TiWPAqGYJOpS6QBDFU5xtbtHOHfcnEMB8tKJIOcTDY2pYVOuVx4AQTV_PER2mo6ymWx-OuiKeI0yGlXuO9zE2oYWsjNPPr-UoYz5PhfKMd-jQEE_BUWNWeyYn12BXVn485bUyW1ZhZ-wtI4jUOjUkpIrP-i6h0xL71ZdPLYv71JhKTxI64_3o5tgfkbhfETmsSW-YKPv-aTQFsbqT4_P_QkAOtI3gIWfMV_276xq9Dy5Bqs"/></div><div class="p-4"><div class="flex justify-between items-start mb-2"><h3 class="text-[18px] font-semibold leading-[1.25] text-on-surface">Cold Brew Cam Quế</h3><span class="text-[15px] font-semibold text-primary">55.000đ</span></div><p class="mb-3 text-[15px] leading-[1.7] text-on-surface-variant">Cold brew ủ lạnh kết hợp cam tươi và quế thơm, cho hậu vị sáng và sạch.</p><div class="flex flex-wrap items-center gap-2"><span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Đá xay</span><span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Chữ ký</span></div></div></div><div class="menu-item bg-surface-container-lowest rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(32,80,24,0.08)] group gb-lift" data-category="tea"><div class="aspect-[4/4.3] overflow-hidden bg-cream-100"><img alt="Matcha Latte Nghệ Thuật" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWvy9-PIqg5r90dCUNlXZhTSykseEUQhzxcLIBKtkyGLRz3PwUXxBblpgmwuX6OJ0OqNlMUpCcRud4LHiBwg5J2GXvvr24dIYm3G9voAomoXrnHF5i77qWCUCVCR8eBg3KnGGk1anJl7hrUiKd-Sdh80LtQGNSKC3lPi6JAzFt80yRGM8h-rEhh2BK5OUUg5J7NuodoT8OulGhIQBVyz0R_2t7T4WR_kxEkAFWKSESUBMv6rtNuz8RTvbrvhhnEv6iZY2NfSz996c"/></div><div class="p-4"><div class="flex justify-between items-start mb-2"><h3 class="text-[18px] font-semibold leading-[1.25] text-on-surface">Matcha Latte Nghệ Thuật</h3><span class="text-[15px] font-semibold text-primary">65.000đ</span></div><p class="mb-3 text-[15px] leading-[1.7] text-on-surface-variant">Matcha pha chỉn chu cùng sữa hữu cơ, cho vị xanh mượt và cân bằng.</p><div class="flex flex-wrap items-center gap-2"><span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Trà</span><span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Hữu cơ</span></div></div></div><div class="menu-item bg-surface-container-lowest rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(32,80,24,0.08)] group gb-lift" data-category="pastry"><div class="aspect-[4/4.3] overflow-hidden bg-cream-100"><img alt="Bánh Sừng Bò" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZIjtE4ytfQ-X_x7L6ta867Mv3RqQP85cvklVzSiL9_HzvQckre-axT7Wc35ZY4aY9C2nWUdgye47Xd8v0u3fJPOgaCpesGEIssmf6pca6RfSOCzeiBMj-tzp4oARpx6h9JjzwFEGgU7Lenq_1epukPQNOw81SyCAjv0mZOYfdj9SkxRNpFMuPxC04Mv2qvB8UVmLb-kmJ9LjJiK2xyYGNhypZ0hEwWgnKXoQKmFkcq87JxXc5UEZqD5l-pYGqKHyOds1836AVY7o"/></div><div class="p-4"><div class="flex justify-between items-start mb-2"><h3 class="text-[18px] font-semibold leading-[1.25] text-on-surface">Bánh Sừng Bò</h3><span class="text-[15px] font-semibold text-primary">35.000đ</span></div><p class="mb-3 text-[15px] leading-[1.7] text-on-surface-variant">Croissant nướng vàng đều, thơm bơ và giữ được độ xốp giòn đặc trưng.</p><div class="flex flex-wrap items-center gap-2"><span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Bánh ngọt</span><span class="bg-secondary-container text-ink-700 px-2.5 py-1 rounded-full text-label-sm">Nướng mới</span></div></div></div></div>
+</section>
+</main>
+<footer class="gb-footer">
+<div class="gb-footer-inner grid grid-cols-1 gap-8 md:grid-cols-4">
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md font-bold text-forest-600">Green Bean</div>
+<p class="max-w-[240px] font-body-md text-body-md text-on-surface-variant">Demo visual HTML cho website Green Bean Coffee &amp; Tea, uu tien trai nghiem gon, sach va de nhin.</p>
+<div class="flex gap-3">
+<a class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" href="https://www.facebook.com/greenbeancoffeeandtea" target="_blank" rel="noopener" aria-label="Facebook Green Bean">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<button class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" type="button" aria-label="Instagram demo">
+<span class="material-symbols-outlined text-[20px]">camera</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Khám phá</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="main.html">Trang chủ</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="intrduction.html">Giới thiệu</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="menu.html">Menu</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="specialist.html">Món nổi bật</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Trải nghiệm</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="space.html">Không gian</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="sales.html">Ưu đãi</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="contact.html">Liên hệ</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Sự kiện riêng</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Thông tin demo</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Cac form va mot so nut hien chi dung de demo visual, chua ket noi chuc nang that.</p>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Chính sách riêng tư</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Điều khoản dịch vụ</a>
+</div>
+</div>
+</footer>
+
+<script>
+        function filterCategory(category) {
+            const items = document.querySelectorAll('.menu-item');
+            const buttons = document.querySelectorAll('.category-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('active-filter');
+                btn.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+            });
+
+            const currentBtn = Array.from(buttons).find(btn => 
+                (category === 'all' && btn.innerText.includes('Tất cả')) ||
+                (category === 'coffee' && btn.innerText.includes('Cà phê')) ||
+                (category === 'tea' && btn.innerText.includes('Trà')) ||
+                (category === 'blended' && btn.innerText.includes('Đá xay')) ||
+                (category === 'pastry' && btn.innerText.includes('Bánh ngọt'))
+            );
+
+            if (currentBtn) {
+                currentBtn.classList.add('active-filter');
+                currentBtn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+            }
+
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                    item.style.opacity = '0';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transition = 'opacity 0.4s ease-out';
+                    }, 50);
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Add micro-interaction for cards
+        document.querySelectorAll('.menu-item').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+                card.style.transition = 'transform 0.3s ease';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body></html>

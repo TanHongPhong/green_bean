@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Offers - Green Bean Coffee &amp; Tea</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/site.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-background": "#1c1c18",
+                "surface-container-high": "#ebe8e2",
+                "surface": "#fcf9f3",
+                "surface-container-highest": "#e5e2dc",
+                "tertiary-fixed-dim": "#9ed58d",
+                "primary": "#285216",
+                "on-primary-fixed-variant": "#265014",
+                "surface-tint": "#3d692a",
+                "outline-variant": "#c2c9ba",
+                "tertiary-fixed": "#b9f1a7",
+                "on-tertiary": "#ffffff",
+                "primary-fixed": "#bdf1a2",
+                "error-container": "#ffdad6",
+                "secondary-fixed-dim": "#bccd9d",
+                "inverse-surface": "#31312d",
+                "surface-container-lowest": "#ffffff",
+                "on-surface": "#1c1c18",
+                "secondary": "#54633d",
+                "primary-container": "#3f6b2c",
+                "on-primary-fixed": "#062100",
+                "tertiary-container": "#3b6c31",
+                "on-tertiary-fixed": "#002200",
+                "primary-fixed-dim": "#a2d489",
+                "surface-variant": "#e5e2dc",
+                "inverse-primary": "#a2d489",
+                "on-tertiary-fixed-variant": "#215119",
+                "surface-bright": "#fcf9f3",
+                "surface-dim": "#dcdad4",
+                "on-secondary-container": "#596840",
+                "stone-200": "#d8d2c8",
+                "surface-container": "#f0eee8",
+                "error": "#ba1a1a",
+                "on-secondary-fixed-variant": "#3d4b27",
+                "secondary-fixed": "#d7e9b8",
+                "on-primary-container": "#b7ea9c",
+                "on-surface-variant": "#42493d",
+                "on-error": "#ffffff",
+                "on-secondary-fixed": "#131f02",
+                "ink-500": "#6f685f",
+                "secondary-container": "#d5e6b5",
+                "on-secondary": "#ffffff",
+                "ink-700": "#4a453d",
+                "inverse-on-surface": "#f3f0ea",
+                "on-primary": "#ffffff",
+                "surface-container-low": "#f6f3ed",
+                "background": "#fcf9f3",
+                "forest-600": "#285018",
+                "ink-900": "#26231f",
+                "cream-100": "#efe9de",
+                "on-error-container": "#93000a",
+                "tertiary": "#23531b",
+                "outline": "#73796c",
+                "on-tertiary-container": "#b3eba1"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "unit": "4px",
+                "stack-md": "13px",
+                "gutter": "19px",
+                "margin-mobile": "13px",
+                "stack-sm": "6px",
+                "margin-desktop": "51px",
+                "stack-lg": "26px"
+            },
+            "fontFamily": {
+                "headline-lg-mobile": ["Montserrat"],
+                "headline-lg": ["Montserrat"],
+                "body-lg": ["Montserrat"],
+                "body-md": ["Montserrat"],
+                "label-sm": ["Montserrat"],
+                "headline-md": ["Montserrat"],
+                "display-lg": ["Montserrat"],
+                "label-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                "headline-lg-mobile": ["26px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "headline-lg": ["34px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "body-lg": ["17px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "500"}],
+                "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                "display-lg": ["46px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "700"}],
+                "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            background-color: #fcf9f3;
+        }
+        .grain-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.05;
+            background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .green-shadow {
+            box-shadow: 0px 4px 20px rgba(32, 80, 24, 0.08);
+        }
+        .bento-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .bento-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 12px 30px rgba(32, 80, 24, 0.12);
+        }
+    </style>
+<script defer src="../assets/site.js"></script>
+</head>
+<body class="text-on-background antialiased">
+<div class="grain-overlay"></div>
+<!-- TopNavBar -->
+<header class="gb-topbar">
+<div class="gb-topbar-inner">
+<a class="font-display-lg text-headline-md font-bold text-primary tracking-tight whitespace-nowrap" href="main.html">Green Bean</a>
+<nav class="hidden lg:flex items-center gap-gutter">
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="main.html">Trang chủ</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="intrduction.html">Giới thiệu</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="menu.html">Menu</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="specialist.html">Món nổi bật</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="space.html">Không gian</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-primary border-b-2 border-primary pb-1" href="sales.html" aria-current="page">Ưu đãi</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="contact.html">Liên hệ</a>
+</nav>
+<div class="flex items-center gap-stack-sm text-primary">
+<a class="material-symbols-outlined cursor-pointer hover:scale-95 transition-transform" href="contact.html" aria-label="Liên hệ và chỉ đường">map</a>
+<button class="lg:hidden material-symbols-outlined text-primary" type="button" aria-label="Menu demo">menu</button>
+</div>
+</div>
+</header>
+<main class="gb-page-main min-h-screen">
+<!-- Hero Section -->
+<header class="mb-stack-lg text-center md:text-left">
+<h1 class="font-headline-lg text-headline-lg md:text-display-lg text-forest-600 mb-stack-sm">Ưu đãi &amp; Thành viên</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Khám phá thế giới hương vị với những đặc quyền dành riêng cho bạn. Thưởng thức cà phê hữu cơ và nhận những phần quà hấp dẫn.</p>
+</header>
+<!-- Current Promos: Bento Grid -->
+<section data-reveal class="mb-[64px]">
+<div class="flex items-center justify-between mb-gutter">
+<h2 class="font-headline-md text-headline-md text-primary">Chương trình khuyến mãi</h2>
+<div class="h-[2px] flex-grow mx-gutter bg-stone-200"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Featured Promo -->
+<div class="md:col-span-7 bento-card relative overflow-hidden rounded-xl aspect-[16/9] md:aspect-auto md:h-[320px] bg-cream-100 green-shadow group">
+<img alt="Fresh Day Promo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOigeMB0uUyzThfnrEQRNw1_47b0IO-7bBMS1ULQytAiut_CBxoWkWpFZbL2qnKnzLnvgIc0SbbWPgDyh8yYgLB5tefFZxECoSfJu4wx9pPDp3tjl-hmYtnRIwpIM-GVyIL8vqeoUeGUVECJfV77GdImGa6ssDF6jPDQC4bqFx4ea9koBLoVNlwEpGpCxDLjp4_xU5-Lb3lYQmBNsHyNWYW4nxmh6UlzvY-2FlbRsFkZDwpLQ0-14-cb5ViG5FR-Qc8y8-5YczVF4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-stack-lg">
+<span class="inline-block px-stack-md py-stack-sm bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-full font-label-lg text-label-lg mb-stack-sm w-fit">Giới hạn thời gian</span>
+<h3 class="font-headline-lg text-headline-lg text-white mb-2">Fresh Day: Khởi đầu tươi mới</h3>
+<p class="font-body-md text-body-md text-white/90">Ưu đãi đặc biệt cho dòng trà trái cây organic mỗi thứ Hai đầu tuần.</p>
+</div>
+</div>
+<!-- Secondary Promo Column -->
+<div class="md:col-span-5 flex flex-col gap-gutter">
+<div class="bento-card relative overflow-hidden rounded-xl h-[238px] bg-white green-shadow flex group">
+<div class="w-1/2 overflow-hidden">
+<img alt="Buy 1 Get 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm4h-Tkx4DIsCjQqoErFgP9iEDd2QwZzGjuEMkr2NXc0GcBE25ckSDMHQMYoY6mLQa762EofTrlC7yMQnsv6OET5u4YtbzfNVqMRSskI2kI_0GQzRWNXuxZYAI-CWdopM4onrtMThaqsEWCrcUj2ktDv2EPCLdXUcEubvGH5aUbfIIUnU09B019CLX62RYKH9AU66QsH5M_lrtLcSfE5EeoNm9-EqKhZGJBGj9GXTN68r95OyYRm-PBpBofhlHurosIadskvn0C9k"/>
+</div>
+<div class="w-1/2 p-stack-md flex flex-col justify-center">
+<span class="text-primary font-bold font-label-sm text-label-sm uppercase tracking-widest mb-stack-sm">Promotion</span>
+<h4 class="font-headline-md text-headline-md text-ink-900 leading-tight mb-2">Mua 1 Tặng 1</h4>
+<p class="font-label-lg text-label-lg text-ink-500">Áp dụng cho đơn hàng tại quầy sau 18:00 mỗi ngày.</p>
+</div>
+</div>
+<div class="bento-card relative overflow-hidden rounded-xl h-[238px] bg-surface-container green-shadow flex group">
+<div class="w-1/2 p-stack-md flex flex-col justify-center text-right">
+<span class="text-secondary font-bold font-label-sm text-label-sm uppercase tracking-widest mb-stack-sm">Coffee Lover</span>
+<h4 class="font-headline-md text-headline-md text-ink-900 leading-tight mb-2">Combo 18k+</h4>
+<p class="font-label-lg text-label-lg text-ink-500">Thưởng thức cà phê sữa đá truyền thống với giá cực ưu đãi.</p>
+</div>
+<div class="w-1/2 overflow-hidden">
+<img alt="Program 18k+" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtcc86CSA813QqY8wdRj5rALuyCWwXEfan3AcMhFEv15CiQLX9QSk77wCRTrA_3qZBRLRYEpxGz9QGqRq82vBSno7RM05tO_9L1VUA6bgxY35h51llIVK2tL4sSWSmjHPICD7JkKApOm4j_W6XhfRL3bJNWPQvR9Pz3azCN-UY-fj4Nf0vJq9KGV25PC4kmBbiiyTuBx2QkzSINreOKY2oXauX2FgfYjRa8epQmVA5w_dx-Tko6D9C4c1OJQkwS2eY6Eu780dE3lk"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Member Rewards Section -->
+<section data-reveal class="mb-[64px] bg-cream-100 rounded-[19px] p-stack-lg md:p-[51px] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-forest-600/5 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-tertiary/5 rounded-full -ml-32 -mb-24 blur-3xl"></div>
+<div class="relative z-10">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-forest-600 mb-stack-sm">Chương trình Thành viên Green Bean</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Tích điểm đổi quà và hưởng những đặc quyền chỉ dành riêng cho gia đình Green Bean.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Green Tier -->
+<div class="bg-white/80 backdrop-blur-sm p-stack-lg rounded-xl border border-stone-200 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-stack-md">
+<span class="material-symbols-outlined text-secondary text-3xl">eco</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-secondary mb-stack-sm">Green</h4>
+<p class="font-label-lg text-label-lg text-ink-500 mb-gutter">Dành cho thành viên mới đăng ký.</p>
+<ul class="text-left space-y-stack-sm font-label-lg text-label-lg text-on-surface-variant mb-gutter">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">check_circle</span> Tích điểm mọi đơn hàng</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">check_circle</span> Quà tặng sinh nhật cơ bản</li>
+</ul>
+</div>
+<!-- Bean Tier -->
+<div class="bg-white p-stack-lg rounded-xl border-2 border-primary green-shadow flex flex-col items-center text-center transform scale-105">
+<div class="absolute top-0 right-0 bg-primary text-white font-label-sm text-label-sm px-stack-md py-1 rounded-bl-xl uppercase tracking-wider">Phổ biến nhất</div>
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-stack-md">
+<span class="material-symbols-outlined text-white text-3xl">coffee</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-stack-sm">Bean</h4>
+<p class="font-label-lg text-label-lg text-ink-500 mb-gutter">Hạng thành viên Bạc sau 100 điểm.</p>
+<ul class="text-left space-y-stack-sm font-label-lg text-label-lg text-on-surface-variant mb-gutter">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">check_circle</span> Giảm 5% mọi hóa đơn</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">check_circle</span> Miễn phí 01 topping bất kỳ</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">check_circle</span> Ưu tiên đặt bàn/chỗ</li>
+</ul>
+</div>
+<!-- Premium Tier -->
+<div class="bg-inverse-surface p-stack-lg rounded-xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center mb-stack-md">
+<span class="material-symbols-outlined text-primary-fixed text-3xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-inverse-on-surface mb-stack-sm">Premium</h4>
+<p class="font-label-lg text-label-lg text-outline-variant mb-gutter">Hạng thành viên Vàng cao cấp.</p>
+<ul class="text-left space-y-stack-sm font-label-lg text-label-lg text-surface-variant mb-gutter">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary-fixed-dim">verified</span> Giảm 10% mọi hóa đơn</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary-fixed-dim">verified</span> Trải nghiệm menu mới sớm</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary-fixed-dim">verified</span> Hotline hỗ trợ riêng 24/7</li>
+</ul>
+</div>
+</div>
+<div class="mt-[48px] text-center">
+<button class="bg-forest-600 text-white px-[38px] py-stack-md rounded-full font-label-lg text-label-lg hover:bg-forest-600/90 transition-all active:scale-95 green-shadow" type="button" onclick="alert('Đây là nút demo visual, chưa có đăng ký thành viên thật.');">Tham Gia Ngay</button>
+</div>
+</div>
+</section>
+<!-- Newsletter Signup -->
+<section data-reveal class="max-w-4xl mx-auto mb-[64px]">
+<div class="bg-white rounded-xl p-stack-lg border border-stone-200 flex flex-col md:flex-row items-center gap-gutter green-shadow">
+<div class="md:w-1/2">
+<h2 class="font-headline-md text-headline-md text-ink-900 mb-stack-sm">Đừng bỏ lỡ ưu đãi nào!</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Đăng ký nhận tin để là người đầu tiên biết về các chương trình khuyến mãi và quà tặng mới nhất.</p>
+</div>
+<div class="md:w-1/2 w-full">
+<form class="flex gap-stack-sm" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã đăng ký!');">
+<input class="flex-grow bg-surface border border-stone-200 rounded-lg px-stack-md py-stack-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all font-body-md" placeholder="Địa chỉ email của bạn" required="" type="email"/>
+<button class="bg-forest-600 text-white px-gutter py-stack-sm rounded-lg font-label-lg text-label-lg hover:bg-forest-600/90 transition-all active:scale-95" type="submit">Đăng ký</button>
+</form>
+<p class="mt-stack-sm font-label-sm text-label-sm text-ink-500">Chúng tôi cam kết bảo mật thông tin của bạn.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="gb-footer">
+<div class="gb-footer-inner grid grid-cols-1 gap-8 md:grid-cols-4">
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md font-bold text-forest-600">Green Bean</div>
+<p class="max-w-[240px] font-body-md text-body-md text-on-surface-variant">Demo visual HTML cho website Green Bean Coffee &amp; Tea, uu tien trai nghiem gon, sach va de nhin.</p>
+<div class="flex gap-3">
+<a class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" href="https://www.facebook.com/greenbeancoffeeandtea" target="_blank" rel="noopener" aria-label="Facebook Green Bean">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<button class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" type="button" aria-label="Instagram demo">
+<span class="material-symbols-outlined text-[20px]">camera</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Khám phá</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="main.html">Trang chủ</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="intrduction.html">Giới thiệu</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="menu.html">Menu</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="specialist.html">Món nổi bật</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Trải nghiệm</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="space.html">Không gian</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="sales.html">Ưu đãi</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="contact.html">Liên hệ</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Sự kiện riêng</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Thông tin demo</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Cac form va mot so nut hien chi dung de demo visual, chua ket noi chuc nang that.</p>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Chính sách riêng tư</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Điều khoản dịch vụ</a>
+</div>
+</div>
+</footer>
+
+</body></html>

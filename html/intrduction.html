@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Về chúng tôi | Green Bean Coffee &amp; Tea</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/site.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#1c1c18",
+                    "surface-container-high": "#ebe8e2",
+                    "surface": "#fcf9f3",
+                    "surface-container-highest": "#e5e2dc",
+                    "tertiary-fixed-dim": "#9ed58d",
+                    "primary": "#285216",
+                    "on-primary-fixed-variant": "#265014",
+                    "surface-tint": "#3d692a",
+                    "outline-variant": "#c2c9ba",
+                    "tertiary-fixed": "#b9f1a7",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#bdf1a2",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#bccd9d",
+                    "inverse-surface": "#31312d",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1c1c18",
+                    "secondary": "#54633d",
+                    "primary-container": "#3f6b2c",
+                    "on-primary-fixed": "#062100",
+                    "tertiary-container": "#3b6c31",
+                    "on-tertiary-fixed": "#002200",
+                    "primary-fixed-dim": "#a2d489",
+                    "surface-variant": "#e5e2dc",
+                    "inverse-primary": "#a2d489",
+                    "on-tertiary-fixed-variant": "#215119",
+                    "surface-bright": "#fcf9f3",
+                    "surface-dim": "#dcdad4",
+                    "on-secondary-container": "#596840",
+                    "stone-200": "#d8d2c8",
+                    "surface-container": "#f0eee8",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#3d4b27",
+                    "secondary-fixed": "#d7e9b8",
+                    "on-primary-container": "#b7ea9c",
+                    "on-surface-variant": "#42493d",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#131f02",
+                    "ink-500": "#6f685f",
+                    "secondary-container": "#d5e6b5",
+                    "on-secondary": "#ffffff",
+                    "ink-700": "#4a453d",
+                    "inverse-on-surface": "#f3f0ea",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f6f3ed",
+                    "background": "#fcf9f3",
+                    "forest-600": "#285018",
+                    "ink-900": "#26231f",
+                    "cream-100": "#efe9de",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#23531b",
+                    "outline": "#73796c",
+                    "on-tertiary-container": "#b3eba1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "4px",
+                    "stack-md": "13px",
+                    "gutter": "19px",
+                    "margin-mobile": "13px",
+                    "stack-sm": "6px",
+                    "margin-desktop": "51px",
+                    "stack-lg": "26px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Montserrat"],
+                    "headline-lg": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "body-md": ["Montserrat"],
+                    "label-sm": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "display-lg": ["Montserrat"],
+                    "label-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["26px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-lg": ["34px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["17px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["46px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fcf9f3;
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            background-repeat: repeat;
+        }
+        .grain-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.05;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script defer src="../assets/site.js"></script>
+</head>
+<body class="font-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<div class="grain-overlay"></div>
+<!-- TopNavBar -->
+<header class="gb-topbar">
+<div class="gb-topbar-inner">
+<a class="font-display-lg text-headline-md font-bold text-primary tracking-tight whitespace-nowrap" href="main.html">Green Bean</a>
+<nav class="hidden lg:flex items-center gap-gutter">
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="main.html">Trang chủ</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-primary border-b-2 border-primary pb-1" href="intrduction.html" aria-current="page">Giới thiệu</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="menu.html">Menu</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="specialist.html">Món nổi bật</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="space.html">Không gian</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="sales.html">Ưu đãi</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="contact.html">Liên hệ</a>
+</nav>
+<div class="flex items-center gap-stack-sm text-primary">
+<a class="material-symbols-outlined cursor-pointer hover:scale-95 transition-transform" href="contact.html" aria-label="Liên hệ và chỉ đường">map</a>
+<button class="lg:hidden material-symbols-outlined text-primary" type="button" aria-label="Menu demo">menu</button>
+</div>
+</div>
+</header>
+<main class="gb-page-main min-h-screen">
+<!-- Hero Section -->
+<header class="gb-section-gap relative overflow-hidden">
+<div class="gb-shell-narrow grid grid-cols-1 items-center gap-8 md:grid-cols-12 md:gap-8" data-reveal="">
+<div class="md:col-span-5 order-2 md:order-1">
+<span class="font-label-lg text-label-lg text-forest-600 uppercase tracking-widest block mb-stack-sm">Về chúng tôi</span>
+<h1 class="mb-4 text-[42px] font-bold leading-[1.08] text-primary md:text-[50px]">Câu chuyện của chúng tôi</h1>
+<p class="max-w-md text-body-md leading-[1.75] text-on-surface-variant">
+                        Nơi những hạt cà phê organic gặp gỡ tâm hồn người yêu trà, tạo nên không gian tĩnh lặng giữa lòng phố thị.
+                    </p>
+</div>
+<div class="md:col-span-7 order-1 md:order-2">
+<div class="relative aspect-[16/10] overflow-hidden rounded-[18px] shadow-[0px_12px_32px_rgba(32,80,24,0.1)] md:aspect-auto">
+<img alt="Lifestyle image" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAMWgU2jwkT5_3RUzYapwZfq1oNd4quSfV8_Ww14LHCpOPV6lpIVaV5frdmQ2EFaJmmc9N1f6FEZLL0LBJxwQuhAir4suQiAZG7evq3KEavQEH9tJ60NFBFb_52IZRTlTNsSRvzfrc7bS2qOx7lH7hylt4HVn9aM1oKvGUUDuOhS12SaHqoPcceX6lzc7bhXtJuNyiGESVnUAUwV_Ja0r0lea1j63ivG4Tid8xGvRGNLvM6GUjhWhYOGYqIjud2yB8wCXadLcLHB8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent pointer-events-none"></div>
+</div>
+</div>
+</div>
+</header>
+<!-- Brand Story -->
+<section data-reveal class="gb-section-gap bg-surface-container-low/50">
+<div class="gb-shell-narrow grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-14">
+<div class="relative group">
+<div class="absolute -inset-4 bg-tertiary-fixed-dim/20 rounded-xl -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
+<img alt="Lifestyle lifestyle" class="relative z-10 aspect-square w-full rounded-[18px] object-cover shadow-[0px_12px_30px_rgba(32,80,24,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvjRbMTOWk_MteK_2GUMPY_4Y1JTsU2RM20AJ-R1jIEcl9RaI-IyxxyoN_Q0-tsanMjMNcC1itYu1xge1gQFXBO6VLPo2LDTThIkmDFMb-4d9t6RxD3AWSJlFAD_bD_cfdc6pCKjGgZ8kHT1lep4YbUukWz3SW7LOaHxeCiqgBfcA2iJXHNVB-SmCO11zovESOvJfkJ8CqVf_mmT8nyAxVuiuXK0pJDI-AwlJu0TLOJKhSChospFjOTb-4orJAzjEKxNP85XnXlv0"/>
+</div>
+<div class="flex flex-col gap-5">
+<h2 class="text-[34px] font-semibold leading-[1.15] text-primary">Hành trình từ nông trại đến tách cà phê</h2>
+<div class="space-y-5 text-body-md leading-[1.8] text-on-surface-variant">
+<p>Chúng tôi tìm kiếm những vùng nguyên liệu có hương vị sạch, cân bằng và được chăm chút thật kỹ từ khâu trồng trọt đến thu hoạch. Điều Green Bean theo đuổi không phải là sự cầu kỳ, mà là một chất lượng đủ chân thành để uống lần nào cũng thấy dễ chịu.</p>
+<p>Mỗi ly cà phê hay tách trà tại quán đều đi qua quy trình chọn lọc gọn gàng, minh bạch và nhất quán. Từ đó, Green Bean giữ được cảm giác mộc, xanh và gần gũi trong từng trải nghiệm nhỏ.</p>
+</div>
+</div>
+</div>
+</section><section data-reveal class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="gb-shell-narrow grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-14">
+<div class="flex flex-col gap-stack-md order-2 md:order-1">
+<h2 class="text-[34px] font-semibold leading-[1.15] text-primary">Lan tỏa phong cách sống xanh</h2>
+<div class="font-body-md text-body-md text-on-surface-variant space-y-4">
+<p>Tại Green Bean, chúng tôi tin rằng mỗi tách cà phê không chỉ là thức uống, mà còn là khởi đầu cho một lối sống bền vững. Từ việc sử dụng túi vải thân thiện đến việc giảm thiểu rác thải nhựa, chúng tôi cùng bạn xây dựng một cộng đồng văn minh, tử tế với môi trường và trân trọng những giá trị nguyên bản nhất.</p>
+</div>
+</div>
+<div class="relative group order-1 md:order-2">
+<div class="absolute -inset-4 bg-tertiary-fixed-dim/20 rounded-xl rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
+<img alt="Green lifestyle with tote bag" class="relative z-10 aspect-square w-full rounded-[18px] object-cover shadow-[0px_12px_30px_rgba(32,80,24,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPqjBUZjBITUKHjvo9XjsQH_KfxcOSgWS7dcMhTLYxsEv1boPP7PQXHfoNmPePJpshwF1S4EiekwcbGgZ45QgQwKOzvsceNJ4jmqGiw6KoHJLq3-rh6dCKxaM4Z_H_J7xtrb_CvN49J3-BxFdNYbt3shQJ9-fPoy2L5pKrI7wwxgy-xtUBlIx0bb3aQOPrKK4B-5LPQVwuE-Lf_lPAvtpZjGc3bMvNbGjFz2R5Oj2Sr_xFS-2q8RV3-4Mcb5krI_ie0ebEVJ_WEaE"/>
+</div>
+</div>
+</section>
+<!-- Core Values: Bento Grid -->
+<section data-reveal class="gb-section-gap bg-surface">
+<div class="gb-shell-narrow">
+<div class="mb-12 text-center">
+<h2 class="text-[34px] font-semibold text-primary mb-4">Giá trị cốt lõi</h2>
+<div class="w-24 h-1 bg-tertiary-fixed mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 gap-gutter md:grid-cols-3" data-stagger="">
+<!-- Value 1 -->
+<div class="gb-lift bg-white p-8 rounded-[18px] shadow-[0px_4px_20px_rgba(32,80,24,0.06)] border border-stone-200/50 flex flex-col items-center text-center">
+<div class="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-secondary-container text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="eco">eco</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">100% Organic</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Sử dụng nguyên liệu hoàn toàn từ thiên nhiên, không hóa chất, đảm bảo sức khỏe người tiêu dùng.</p>
+</div>
+<!-- Value 2 -->
+<div class="gb-lift bg-white p-8 rounded-[18px] shadow-[0px_4px_20px_rgba(32,80,24,0.06)] border border-stone-200/50 flex flex-col items-center text-center">
+<div class="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-secondary-container text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="handshake">handshake</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Direct Trade</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Kết nối trực tiếp với nông hộ, đảm bảo giá trị công bằng và minh bạch trong nguồn cung ứng.</p>
+</div>
+<!-- Value 3 -->
+<div class="gb-lift bg-white p-8 rounded-[18px] shadow-[0px_4px_20px_rgba(32,80,24,0.06)] border border-stone-200/50 flex flex-col items-center text-center">
+<div class="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-secondary-container text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="schedule">schedule</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Fresh Daily</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Cà phê được rang xay và trà được ủ mới mỗi ngày để giữ trọn vẹn hương vị tinh khiết nhất.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy & Mission -->
+<section data-reveal class="gb-section-gap bg-primary text-on-primary relative overflow-hidden">
+<!-- Decorative circle -->
+<div class="absolute -right-24 -top-24 w-96 h-96 bg-primary-container rounded-full opacity-20"></div>
+<div class="absolute -left-24 -bottom-24 w-64 h-64 bg-tertiary-container rounded-full opacity-10"></div>
+<div class="gb-shell-narrow relative z-10">
+<div class="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-14">
+<div>
+<h2 class="mb-6 text-[38px] font-bold leading-[1.08] md:text-[46px]">Triết lý &amp; Sứ mệnh</h2>
+<div class="space-y-6">
+<div class="flex gap-5">
+<span class="material-symbols-outlined text-tertiary-fixed text-4xl flex-shrink-0" data-icon="forest">forest</span>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Sống Xanh</h4>
+<p class="text-primary-fixed opacity-90">Lan tỏa lối sống bền vững thông qua việc sử dụng sản phẩm thân thiện với môi trường.</p>
+</div>
+</div>
+<div class="flex gap-5">
+<span class="material-symbols-outlined text-tertiary-fixed text-4xl flex-shrink-0" data-icon="groups">groups</span>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Vì Cộng Đồng</h4>
+<p class="text-primary-fixed opacity-90">Xây dựng không gian kết nối và hỗ trợ sự phát triển của nền nông nghiệp địa phương.</p>
+</div>
+</div>
+<div class="flex gap-5">
+<span class="material-symbols-outlined text-tertiary-fixed text-4xl flex-shrink-0" data-icon="verified">verified</span>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Chất Lượng</h4>
+<p class="text-primary-fixed opacity-90">Đặt sự trải nghiệm của khách hàng lên hàng đầu với tiêu chuẩn chất lượng khắt khe nhất.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative hidden md:block">
+<div class="aspect-square bg-cream-100/10 rounded-full flex items-center justify-center border border-white/20">
+<div class="text-center p-10">
+<p class="font-headline-lg italic leading-relaxed">"Sự tinh tế không nằm ở sự cầu kỳ, mà ở sự nguyên bản của thiên nhiên."</p>
+<p class="mt-6 font-label-lg tracking-widest">— Green Bean Philosophy</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="gb-footer">
+<div class="gb-footer-inner grid grid-cols-1 gap-8 md:grid-cols-4">
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md font-bold text-forest-600">Green Bean</div>
+<p class="max-w-[240px] font-body-md text-body-md text-on-surface-variant">Demo visual HTML cho website Green Bean Coffee &amp; Tea, uu tien trai nghiem gon, sach va de nhin.</p>
+<div class="flex gap-3">
+<a class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" href="https://www.facebook.com/greenbeancoffeeandtea" target="_blank" rel="noopener" aria-label="Facebook Green Bean">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<button class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" type="button" aria-label="Instagram demo">
+<span class="material-symbols-outlined text-[20px]">camera</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Khám phá</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="main.html">Trang chủ</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="intrduction.html">Giới thiệu</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="menu.html">Menu</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="specialist.html">Món nổi bật</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Trải nghiệm</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="space.html">Không gian</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="sales.html">Ưu đãi</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="contact.html">Liên hệ</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Sự kiện riêng</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Thông tin demo</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Cac form va mot so nut hien chi dung de demo visual, chua ket noi chuc nang that.</p>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Chính sách riêng tư</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Điều khoản dịch vụ</a>
+</div>
+</div>
+</footer>
+
+</body></html>

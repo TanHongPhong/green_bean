@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/site.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .paper-grain {
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            opacity: 0.05;
+        }
+        .green-shadow {
+            box-shadow: 0px 4px 20px rgba(32, 80, 24, 0.08);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-background": "#1c1c18",
+                      "surface-container-high": "#ebe8e2",
+                      "surface": "#fcf9f3",
+                      "surface-container-highest": "#e5e2dc",
+                      "tertiary-fixed-dim": "#9ed58d",
+                      "primary": "#285216",
+                      "on-primary-fixed-variant": "#265014",
+                      "surface-tint": "#3d692a",
+                      "outline-variant": "#c2c9ba",
+                      "tertiary-fixed": "#b9f1a7",
+                      "on-tertiary": "#ffffff",
+                      "primary-fixed": "#bdf1a2",
+                      "error-container": "#ffdad6",
+                      "secondary-fixed-dim": "#bccd9d",
+                      "inverse-surface": "#31312d",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface": "#1c1c18",
+                      "secondary": "#54633d",
+                      "primary-container": "#3f6b2c",
+                      "on-primary-fixed": "#062100",
+                      "tertiary-container": "#3b6c31",
+                      "on-tertiary-fixed": "#002200",
+                      "primary-fixed-dim": "#a2d489",
+                      "surface-variant": "#e5e2dc",
+                      "inverse-primary": "#a2d489",
+                      "on-tertiary-fixed-variant": "#215119",
+                      "surface-bright": "#fcf9f3",
+                      "surface-dim": "#dcdad4",
+                      "on-secondary-container": "#596840",
+                      "stone-200": "#d8d2c8",
+                      "surface-container": "#f0eee8",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed-variant": "#3d4b27",
+                      "secondary-fixed": "#d7e9b8",
+                      "on-primary-container": "#b7ea9c",
+                      "on-surface-variant": "#42493d",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed": "#131f02",
+                      "ink-500": "#6f685f",
+                      "secondary-container": "#d5e6b5",
+                      "on-secondary": "#ffffff",
+                      "ink-700": "#4a453d",
+                      "inverse-on-surface": "#f3f0ea",
+                      "on-primary": "#ffffff",
+                      "surface-container-low": "#f6f3ed",
+                      "background": "#fcf9f3",
+                      "forest-600": "#285018",
+                      "ink-900": "#26231f",
+                      "cream-100": "#efe9de",
+                      "on-error-container": "#93000a",
+                      "tertiary": "#23531b",
+                      "outline": "#73796c",
+                      "on-tertiary-container": "#b3eba1"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "4px",
+                      "stack-md": "13px",
+                      "gutter": "19px",
+                      "margin-mobile": "13px",
+                      "stack-sm": "6px",
+                      "margin-desktop": "51px",
+                      "stack-lg": "26px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": ["Montserrat"],
+                      "headline-lg": ["Montserrat"],
+                      "body-lg": ["Montserrat"],
+                      "body-md": ["Montserrat"],
+                      "label-sm": ["Montserrat"],
+                      "headline-md": ["Montserrat"],
+                      "display-lg": ["Montserrat"],
+                      "label-lg": ["Montserrat"]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": ["26px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "headline-lg": ["34px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "body-lg": ["17px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "500"}],
+                      "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                      "display-lg": ["46px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "700"}],
+                      "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<script defer src="../assets/site.js"></script>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md overflow-x-hidden relative">
+<div class="fixed inset-0 pointer-events-none paper-grain z-0"></div>
+<!-- TopNavBar -->
+<header class="gb-topbar">
+<div class="gb-topbar-inner">
+<a class="font-display-lg text-headline-md font-bold text-primary tracking-tight whitespace-nowrap" href="main.html">Green Bean</a>
+<nav class="hidden lg:flex items-center gap-gutter">
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="main.html">Trang chủ</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="intrduction.html">Giới thiệu</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="menu.html">Menu</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="specialist.html">Món nổi bật</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="space.html">Không gian</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="sales.html">Ưu đãi</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-primary border-b-2 border-primary pb-1" href="contact.html" aria-current="page">Liên hệ</a>
+</nav>
+<div class="flex items-center gap-stack-sm text-primary">
+<a class="material-symbols-outlined cursor-pointer hover:scale-95 transition-transform" href="contact.html" aria-label="Liên hệ và chỉ đường">map</a>
+<button class="lg:hidden material-symbols-outlined text-primary" type="button" aria-label="Menu demo">menu</button>
+</div>
+</div>
+</header>
+<main class="gb-page-main relative z-10">
+<!-- Hero Section -->
+<section data-reveal class="mb-stack-lg">
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Liên hệ Green Bean</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Ghé Green Bean Coffee &amp; Tea hoặc gửi lời nhắn để được hỗ trợ nhanh. Đây là form demo visual, chưa gửi dữ liệu thật.</p>
+</section>
+<!-- Bento Grid Contact Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Contact Form Card -->
+<div class="md:col-span-7 bg-white p-6 rounded-xl green-shadow border border-stone-200">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-md">Gửi lời nhắn</h2>
+<form class="space-y-5" onsubmit="event.preventDefault(); alert('Cảm ơn bạn! Đây là form demo, thông tin chưa được gửi thật.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-stack-md">
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface-variant">Họ tên</label>
+<input class="w-full bg-white border border-stone-200 rounded-lg p-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="Nhập họ tên" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface-variant">Email</label>
+<input class="w-full bg-white border border-stone-200 rounded-lg p-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="ban@greenbean.vn" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface-variant">Chủ đề</label>
+<select class="w-full bg-white border border-stone-200 rounded-lg p-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all">
+<option>Hỏi thông tin chung</option>
+<option>Đặt chỗ demo</option>
+<option>Góp ý</option>
+<option>Hợp tác</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface-variant">Nội dung</label>
+<textarea class="w-full bg-white border border-stone-200 rounded-lg p-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all resize-none" placeholder="Green Bean có thể hỗ trợ gì cho bạn?" rows="5"></textarea>
+</div>
+<button class="bg-forest-600 text-white font-label-lg text-label-lg px-5 py-3 rounded-full hover:bg-primary transition-all active:scale-95" type="submit">Gửi liên hệ</button>
+</form>
+</div>
+<!-- Sidebar Info -->
+<div class="md:col-span-5 space-y-gutter">
+<!-- Quick Info Card -->
+<div class="bg-cream-100 p-6 rounded-xl green-shadow border border-stone-200">
+<div class="space-y-stack-md">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">Chi nhánh Quận 1</h3>
+<p class="text-on-surface-variant">123 Lê Lợi, Bến Nghé, Quận 1, TP. Hồ Chí Minh</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">Chi nhánh Bình Thạnh</h3>
+<p class="text-on-surface-variant">45 Nguyễn Hữu Cảnh, Phường 22, Bình Thạnh, TP. Hồ Chí Minh</p>
+</div>
+</div>
+<div class="h-px bg-stone-200 my-4"></div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<p class="text-on-surface-variant">+84 (028) 3822 0000</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<p class="text-on-surface-variant">hello@greenbean.vn</p>
+</div>
+</div>
+</div>
+<!-- Hours Card -->
+<div class="bg-secondary-container/30 p-6 rounded-xl border border-secondary-container">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Giờ mở cửa</h3>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<span class="font-label-lg text-label-lg text-on-surface-variant">Thứ 2 - Thứ 6</span>
+<span class="font-body-md text-body-md font-semibold text-primary">07:00 - 21:00</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label-lg text-label-lg text-on-surface-variant">Thứ 7 - Chủ nhật</span>
+<span class="font-body-md text-body-md font-semibold text-primary">07:00 - 22:00</span>
+</div>
+</div>
+</div>
+<!-- Social Links -->
+<div class="flex gap-3">
+<a class="flex-1 bg-white border border-stone-200 p-3 rounded-lg flex flex-col items-center gap-2 hover:bg-cream-100 transition-colors group" href="https://www.facebook.com/greenbeancoffeeandtea" target="_blank" rel="noopener">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">face_nod</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Facebook</span>
+</a>
+<button class="flex-1 bg-white border border-stone-200 p-3 rounded-lg flex flex-col items-center gap-2 hover:bg-cream-100 transition-colors group" type="button" aria-label="Instagram demo">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">photo_camera</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Instagram</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Map Section -->
+<section data-reveal class="mt-gutter relative rounded-xl overflow-hidden h-[320px] border border-stone-200 green-shadow">
+<div class="absolute inset-0 bg-surface-container-highest flex items-center justify-center">
+<img class="w-full h-full object-cover grayscale opacity-60 mix-blend-multiply" data-alt="A clean, minimalist overhead map representation of a busy urban district in Ho Chi Minh City, rendered in a sophisticated desaturated palette with soft green highlights for landmarks. The style is modern and professional, aligning with a premium organic tea lounge brand. Soft natural lighting suggests a bright morning atmosphere with delicate shadows." data-location="Ho Chi Minh City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4Z6b6q7T66bnNm54kceTKdRkAqxLXDPoxhL1UYCKDnX1q8a5Ai4JUWcX2SMP3UXueDeOGRT_xfvZKsXxa5SfpaG-teLgTwxFQhpP3oGFrn4H6oF9dr5FhhXdtPXqEBv4ZEMY_y5HkD_x3XJdqgdJnvcqC_pBBSHoeJL2w4Bv_yncFGRUvxr644_BQz9s5gxkb7oY6VhvmmD1ezkWBnHNbJcQfvo6UAzXdbdmCkh1bvbVZWkx6aCyA8h9fpYSF6qom3MuLGzvJXkc"/>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="bg-primary text-white p-3 rounded-full shadow-lg flex items-center gap-2 ">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-label-lg text-label-lg">Green Bean tại đây</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="gb-footer">
+<div class="gb-footer-inner grid grid-cols-1 gap-8 md:grid-cols-4">
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md font-bold text-forest-600">Green Bean</div>
+<p class="max-w-[240px] font-body-md text-body-md text-on-surface-variant">Demo visual HTML cho website Green Bean Coffee &amp; Tea, uu tien trai nghiem gon, sach va de nhin.</p>
+<div class="flex gap-3">
+<a class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" href="https://www.facebook.com/greenbeancoffeeandtea" target="_blank" rel="noopener" aria-label="Facebook Green Bean">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<button class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" type="button" aria-label="Instagram demo">
+<span class="material-symbols-outlined text-[20px]">camera</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Khám phá</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="main.html">Trang chủ</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="intrduction.html">Giới thiệu</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="menu.html">Menu</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="specialist.html">Món nổi bật</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Trải nghiệm</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="space.html">Không gian</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="sales.html">Ưu đãi</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="contact.html">Liên hệ</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Sự kiện riêng</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Thông tin demo</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Cac form va mot so nut hien chi dung de demo visual, chua ket noi chuc nang that.</p>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Chính sách riêng tư</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Điều khoản dịch vụ</a>
+</div>
+</div>
+</footer>
+
+<script>
+        // Simple micro-interaction for form focus
+        const inputs = document.querySelectorAll('input, textarea, select');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.querySelector('label').style.color = '#285216';
+            });
+            input.addEventListener('blur', () => {
+                input.parentElement.querySelector('label').style.color = '#42493d';
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/site.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#1c1c18",
+                    "surface-container-high": "#ebe8e2",
+                    "surface": "#fcf9f3",
+                    "surface-container-highest": "#e5e2dc",
+                    "tertiary-fixed-dim": "#9ed58d",
+                    "primary": "#285216",
+                    "on-primary-fixed-variant": "#265014",
+                    "surface-tint": "#3d692a",
+                    "outline-variant": "#c2c9ba",
+                    "tertiary-fixed": "#b9f1a7",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#bdf1a2",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#bccd9d",
+                    "inverse-surface": "#31312d",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1c1c18",
+                    "secondary": "#54633d",
+                    "primary-container": "#3f6b2c",
+                    "on-primary-fixed": "#062100",
+                    "tertiary-container": "#3b6c31",
+                    "on-tertiary-fixed": "#002200",
+                    "primary-fixed-dim": "#a2d489",
+                    "surface-variant": "#e5e2dc",
+                    "inverse-primary": "#a2d489",
+                    "on-tertiary-fixed-variant": "#215119",
+                    "surface-bright": "#fcf9f3",
+                    "surface-dim": "#dcdad4",
+                    "on-secondary-container": "#596840",
+                    "stone-200": "#d8d2c8",
+                    "surface-container": "#f0eee8",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#3d4b27",
+                    "secondary-fixed": "#d7e9b8",
+                    "on-primary-container": "#b7ea9c",
+                    "on-surface-variant": "#42493d",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#131f02",
+                    "ink-500": "#6f685f",
+                    "secondary-container": "#d5e6b5",
+                    "on-secondary": "#ffffff",
+                    "ink-700": "#4a453d",
+                    "inverse-on-surface": "#f3f0ea",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f6f3ed",
+                    "background": "#fcf9f3",
+                    "forest-600": "#285018",
+                    "ink-900": "#26231f",
+                    "cream-100": "#efe9de",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#23531b",
+                    "outline": "#73796c",
+                    "on-tertiary-container": "#b3eba1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "4px",
+                    "stack-md": "13px",
+                    "gutter": "19px",
+                    "margin-mobile": "13px",
+                    "stack-sm": "6px",
+                    "margin-desktop": "51px",
+                    "stack-lg": "26px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Montserrat"],
+                    "headline-lg": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "body-md": ["Montserrat"],
+                    "label-sm": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "display-lg": ["Montserrat"],
+                    "label-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["26px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-lg": ["34px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["17px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["46px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        background-color: #fcf9f3;
+        background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+        background-blend-mode: multiply;
+      }
+      .green-shadow {
+        box-shadow: 0px 4px 20px rgba(32, 80, 24, 0.08);
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<script defer src="../assets/site.js"></script>
+</head>
+<body class="text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="gb-topbar">
+<div class="gb-topbar-inner">
+<a class="font-display-lg text-headline-md font-bold text-primary tracking-tight whitespace-nowrap" href="main.html">Green Bean</a>
+<nav class="hidden lg:flex items-center gap-gutter">
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="main.html">Trang chủ</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="intrduction.html">Giới thiệu</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="menu.html">Menu</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-primary border-b-2 border-primary pb-1" href="specialist.html" aria-current="page">Món nổi bật</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="space.html">Không gian</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="sales.html">Ưu đãi</a>
+<a class="font-label-lg text-label-lg transition-colors duration-300 whitespace-nowrap text-on-surface-variant hover:text-primary" href="contact.html">Liên hệ</a>
+</nav>
+<div class="flex items-center gap-stack-sm text-primary">
+<a class="material-symbols-outlined cursor-pointer hover:scale-95 transition-transform" href="contact.html" aria-label="Liên hệ và chỉ đường">map</a>
+<button class="lg:hidden material-symbols-outlined text-primary" type="button" aria-label="Menu demo">menu</button>
+</div>
+</div>
+</header>
+<main class="gb-page-main min-h-screen">
+<!-- Hero Title Section -->
+<section data-reveal class="gb-section-gap text-center">
+<div class="gb-shell-narrow">
+<span class="font-label-lg text-label-lg text-primary uppercase tracking-widest mb-stack-sm block">Món nổi bật</span>
+<h1 class="mb-4 text-[42px] font-bold leading-[1.08] text-primary md:text-[52px]">Nghệ thuật trong từng tách thức uống</h1>
+<p class="mx-auto max-w-[760px] text-body-md leading-[1.75] text-on-surface-variant">Một vài món nổi bật được trình bày lại theo hướng gọn, sáng và dễ cảm nhận hơn trong trải nghiệm demo visual.</p>
+</div>
+</section>
+<!-- Featured Showcase: Bento Grid Style -->
+<section data-reveal class="pb-12">
+<div class="gb-shell grid grid-cols-1 gap-5 md:grid-cols-12" data-stagger="">
+<!-- Large Feature: Cà Phê Trứng Đặc Sản -->
+<div class="gb-lift gb-soft-card md:col-span-8 group relative overflow-hidden rounded-[18px] bg-cream-100 transition-transform duration-500">
+<div class="aspect-[16/9] w-full overflow-hidden">
+<img alt="Cà Phê Trứng Đặc Sản" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A high-end, close-up shot of an authentic Vietnamese Egg Coffee served in a minimalist ceramic cup. The golden, frothy egg cream sits perfectly atop a dark layer of robust coffee, garnished with a sprinkle of cocoa powder. The background is a soft-focus, warm-toned café setting with natural wooden textures and soft morning light filtering through lush green plants. The aesthetic is sophisticated and serene, using the brand's signature cream and forest green palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3EaVCYxgZPE6XU0dS1NpHQQ5VnNIjP605zQClR75-TIZwzjy5AgIl5qTebVECBH455r5ySgomdKKP9eSQ3jHXB3vX3GXKTPFd5r-o7lLFBA1WBl46njHJxgbQLGupt-KfYXtVJafrg797-wVJoQce0-zsiVI9o4nP8Dre8klQpOwZ3jyUFI20zNAzbGBeeToyVNM9_UquyvIv5Bg8DJRSyIu69wxsjlgyAf4FCpL0tZ1hUtLR0Fh5BRKMjQhc1nwjPEMgbCDNahM"/>
+</div>
+<div class="p-5 md:p-6">
+<div class="flex justify-between items-start mb-stack-sm">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Cà Phê Trứng Đặc Sản</h2>
+<span class="font-label-lg text-label-lg text-secondary bg-secondary-container px-3 py-1 rounded-full mt-2 inline-block">Món đặc trưng</span>
+</div>
+<span class="font-headline-md text-headline-md text-primary">75.000đ</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Hạt cà phê Robusta từ cao nguyên Lâm Đồng được rang mộc, kết hợp cùng lớp kem trứng đánh bông mịn màng, ngậy béo nhưng không hề tanh. Sự cân bằng hoàn hảo giữa đắng và ngọt.</p>
+<div class="mt-stack-md flex gap-stack-md">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 20px;">eco</span>
+<span class="font-label-sm text-label-sm">Trứng hữu cơ</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 20px;">coffee_maker</span>
+<span class="font-label-sm text-label-sm">Pha thủ công</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Side Feature: Trà Sen Tây Hồ -->
+<div class="gb-lift gb-soft-card md:col-span-4 group relative flex flex-col overflow-hidden rounded-[18px] bg-white transition-transform duration-500">
+<div class="aspect-square w-full overflow-hidden">
+<img alt="Trà Sen Tây Hồ" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An elegant glass teapot filled with pale green lotus tea, showing floating dried lotus petals. A matching small glass cup sits beside it. The scene is lit with ethereal, soft daylight that accentuates the clarity of the tea. The environment is minimalist and organic, featuring stone textures and a single green leaf as an accent. The mood is calm and premium, reflecting the sophisticated organic brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy7XqC2OPApOhQ1JI0VT6MOS4_0CMmCjhFDi2Xvw2E-QUTfRUV-_CAIqcbVbf46yrPehfGFbA2dY40eTsNblAyuI1QqA9qsPhdp3duP6orfUhiDWymTOGN1d1BxDPjGygRQsIF9-gkIFAdKDnP8CQwptqLvyoXkBk5cj0qdIW_wYYZWJZOmuwARfmAlkp_JHqUmzaERwHjpzIz3CYQVds4bXnTzbnfT2CNy7muhKPL39ZUkUGMxCyQBmNvzRoGd_AmZDPrqK7fo14"/>
+</div>
+<div class="flex-grow p-5">
+<h3 class="font-headline-md text-headline-md text-primary">Trà Sen Tây Hồ</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-sm">Lá trà Thái Nguyên thượng hạng ướp cùng hương sen Tây Hồ tinh khiết. Một hương vị thanh tao, dịu nhẹ cho những buổi trà chiều tĩnh lặng.</p>
+<div class="mt-stack-md flex justify-between items-center">
+<span class="font-headline-md text-headline-md text-primary">65.000đ</span>
+<a class="bg-forest-600 text-white px-stack-md py-2 rounded-full font-label-lg text-label-lg hover:bg-primary transition-colors shadow-md" href="menu.html">Thử ngay</a>
+</div>
+</div>
+</div>
+<!-- Bottom Feature 1: Matcha Latte Hữu Cơ -->
+<div class="gb-lift gb-soft-card md:col-span-6 group relative grid grid-cols-1 overflow-hidden rounded-[18px] bg-white transition-transform duration-500 sm:grid-cols-2">
+<div class="aspect-square sm:aspect-auto overflow-hidden">
+<img alt="Matcha Latte Hữu Cơ" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A vibrant green Matcha Latte with beautiful heart-shaped latte art in a textured ceramic mug. Beside the mug are wooden spoons with fine matcha powder and whole matcha leaves. The lighting is soft and bright, casting gentle green-tinted shadows on a cream-colored paper texture background. The aesthetic is clean, organic, and highly tactile, focusing on the quality of the matcha." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgWTxu9izd8e3euBMi897fDo8IChCF0BEqdx7qLdOBg9mOIT-hX75udpwQeu7BZmp4UncyTdyVe9sxXCqxWSeGKn-zDg0wFNoIerwpp7lo60aZM9F5qhg1lCyNXfozmNHQY2FeA7e_WxJAxHB6W-DXBPXES1V7gWLb1JrJay6r78sZcpOmvybZJOu5UBVgCV5tyM3YF_xgo9Z5viIFlJqtDQGSfyMIPENlyv4_8nn0hUdYEnndCwFNuacH_szXmZNl3K3GIR4vC8s"/>
+</div>
+<div class="flex flex-col justify-center p-5 md:p-6">
+<h3 class="font-headline-md text-headline-md text-primary">Matcha Latte Hữu Cơ</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-sm">Bột Matcha Uji nhập khẩu trực tiếp từ Nhật Bản, kết hợp sữa hạt hạnh nhân tự nấu. Vị chát nhẹ tinh tế hòa quyện cùng sự bùi béo tự nhiên.</p>
+<div class="mt-stack-md flex justify-between items-center">
+<span class="font-headline-md text-headline-md text-primary">80.000đ</span>
+<span class="material-symbols-outlined text-primary cursor-pointer">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Bottom Feature 2: Seasonal Fruit Tea (Asymmetric addition) -->
+<div class="gb-lift gb-soft-card md:col-span-6 group relative grid grid-cols-1 overflow-hidden rounded-[18px] bg-surface-container transition-transform duration-500 sm:grid-cols-2">
+<div class="order-2 flex flex-col justify-center p-5 md:p-6 sm:order-1">
+<h3 class="font-headline-md text-headline-md text-primary">Trà Trái Cây Nhiệt Đới</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-sm">Sự kết hợp tươi mát giữa cốt trà Oolong và các loại trái cây theo mùa: xoài, chanh dây, dứa. Giàu Vitamin và tràn đầy năng lượng.</p>
+<div class="mt-stack-md flex justify-between items-center">
+<span class="font-headline-md text-headline-md text-primary">55.000đ</span>
+<span class="material-symbols-outlined text-primary cursor-pointer">favorite</span>
+</div>
+</div>
+<div class="aspect-square sm:aspect-auto overflow-hidden order-1 sm:order-2">
+<img alt="Trà Trái Cây Nhiệt Đới" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A refreshing, tall glass of vibrant orange-colored fruit tea filled with ice cubes, fresh mango slices, and passion fruit seeds. Mint leaves garnish the top. The glass is sweating with condensation, placed on a light-colored wooden table under bright, sunny outdoor lighting with leafy shadows. The overall feel is fresh, energetic, and natural, matching the organic brand style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYY5eBtjVE4KGw8hQ0hAveHoIy2xZpaxsxeTdO_hYvL3yybA29hArZq5JJHfnbKm6Hm0MrhAygbNvnKZ01BDOm-VQDk0wPslwn1KKJrPg5nWiAsTl5rIibbLVMq8HiWjIYVfaR92w7TKK9LifEatzsdWi5xOJq2Gp5rIGnPRkRdw4TcCM4KMbq9puwojre626tCoDo3-qTgclmoOmLohAgDd7iQY-a2H8A0afAB7WMLcaVn8J3uDgf3IC5QaCIoJ5f5d0pHgIRWnw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Decorative Quote Section -->
+<section data-reveal class="gb-shell-tight mt-6 border-t border-stone-200 pt-10 text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-stack-sm">format_quote</span>
+<p class="mx-auto max-w-[820px] text-[28px] italic leading-[1.45] text-ink-700 md:text-[34px]">"Chúng tôi tin rằng mỗi hạt cà phê đều mang trong mình câu chuyện của đất mẹ, và nhiệm vụ của Green Bean là kể lại câu chuyện ấy một cách trọn vẹn nhất."</p>
+<div class="mt-stack-md flex justify-center items-center gap-stack-sm">
+<div class="w-12 h-[1px] bg-primary"></div>
+<span class="font-label-lg text-label-lg text-primary uppercase">Triết lý Green Bean</span>
+<div class="w-12 h-[1px] bg-primary"></div>
+</div>
+</section>
+</main>
+<footer class="gb-footer">
+<div class="gb-footer-inner grid grid-cols-1 gap-8 md:grid-cols-4">
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md font-bold text-forest-600">Green Bean</div>
+<p class="max-w-[240px] font-body-md text-body-md text-on-surface-variant">Demo visual HTML cho website Green Bean Coffee &amp; Tea, uu tien trai nghiem gon, sach va de nhin.</p>
+<div class="flex gap-3">
+<a class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" href="https://www.facebook.com/greenbeancoffeeandtea" target="_blank" rel="noopener" aria-label="Facebook Green Bean">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<button class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-primary transition-colors hover:bg-cream-100" type="button" aria-label="Instagram demo">
+<span class="material-symbols-outlined text-[20px]">camera</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Khám phá</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="main.html">Trang chủ</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="intrduction.html">Giới thiệu</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="menu.html">Menu</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="specialist.html">Món nổi bật</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Trải nghiệm</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="space.html">Không gian</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="sales.html">Ưu đãi</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" href="contact.html">Liên hệ</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Sự kiện riêng</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Thông tin demo</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Cac form va mot so nut hien chi dung de demo visual, chua ket noi chuc nang that.</p>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Chính sách riêng tư</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant transition-colors hover:text-primary" aria-disabled="true">Điều khoản dịch vụ</a>
+</div>
+</div>
+</footer>
+
+</body></html>
