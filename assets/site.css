@@ -98,9 +98,9 @@
 }
 
 .gb-footer-logo {
-  height: 88px;
-  overflow: visible;
-  width: 100%;
+  width: min(220px, 100%);
+  height: auto;
+  overflow: hidden;
   margin-left: 0;
   justify-content: flex-start;
 }
@@ -119,11 +119,10 @@
 }
 
 .gb-footer-logo img {
-  width: auto;
-  height: 88px;
+  display: block;
+  width: 100%;
+  height: auto;
   object-fit: contain;
-  transform: scale(1.62);
-  transform-origin: left center;
 }
 
 .gb-page-main {
@@ -177,7 +176,20 @@
 
 .gb-footer-social {
   display: flex;
+  flex-wrap: wrap;
+  width: min(220px, 100%);
+  justify-content: center;
   gap: 12px;
+}
+
+.gb-footer-social a {
+  flex: 0 0 40px;
+  line-height: 1;
+}
+
+.gb-footer-social .material-symbols-outlined {
+  display: block;
+  line-height: 1;
 }
 
 .gb-footer-title {
@@ -409,19 +421,22 @@
   }
 
   .gb-footer-logo {
-    height: 64px;
-    width: 100%;
+    width: min(180px, 100%);
+    height: auto;
     margin-left: 0;
     justify-content: flex-start;
   }
 
   .gb-footer-logo img {
-    height: 64px;
-    transform: scale(1.52);
-    transform-origin: left center;
+    width: 100%;
+    height: auto;
   }
 
   .gb-footer-brand {
     max-width: none;
+  }
+
+  .gb-footer-social {
+    width: min(180px, 100%);
   }
 }
